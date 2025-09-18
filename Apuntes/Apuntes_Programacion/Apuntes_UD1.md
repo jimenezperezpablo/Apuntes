@@ -15,6 +15,7 @@ Entendiendo el entorno de visual estudio y su compatibilidad con todo el ecosist
 
 #### Boolean --> Solo 2 estados (true o false)
 
+
  Las variables tienen que tener: Nombre , Valor y Tipo 
 
  Las variables son modificables
