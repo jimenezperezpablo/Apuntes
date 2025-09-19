@@ -53,8 +53,6 @@
 - Formacion y señalizacion adecuada
 
 
-
-
 ###### 4. Incendio
 
 - Gases toxicos: Asfixia
@@ -69,3 +67,27 @@
 
 
  
+
+#### Agentes Fisicos
+
+###### 1. Ruido 
+- Riesgos
+    - Perdida Auditiva 
+    - Perdida de Atencion y tiempo de reaccion
+    - Efectos Fisicos: Dolor de cabeza, insomnio, cansancio, hipertension
+    - Efectos Psicologicos: irritabilidad, agresividad y depresion
+    
+
+
+###### 2. Vibraciones
+
+- Riesgos
+    - Alteracion en el equilibrio, con mareos y vomitos
+    - Problemas en la columna vertebral, los huesos o las articulaciones y el aparato digestivo
+
+
+###### 3. Temperatura
+
+- Riesgos
+    - Por exceso: deshidratacion y golpe de calor
+    - Por defecto: escalofrios, entumecimiento, hipotermia, congelacion
