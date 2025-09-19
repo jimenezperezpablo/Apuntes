@@ -24,4 +24,3 @@ Entendiendo el entorno de visual estudio y su compatibilidad con todo el ecosist
 
 ### Declaracion de variables ###
 
-
