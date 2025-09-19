@@ -7,13 +7,13 @@ Entendiendo el entorno de visual estudio y su compatibilidad con todo el ecosist
 ## Dia 2 ##
  ### Tipos de variables ###
 
-#### Int --> Numeros enteros
+**Int** --> Numeros enteros
 
-#### Float  --> Numero decimal
+**Float**  --> Numero decimal
 
-#### Strign --> Para guaradar y representar cadenas de texto
+**Strign** --> Para guaradar y representar cadenas de texto
 
-#### Boolean --> Solo 2 estados (true o false)
+**Boolean** --> Solo 2 estados (true o false)
 
  Las variables tienen que tener: Nombre , Valor y Tipo 
 
