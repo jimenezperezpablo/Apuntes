@@ -91,3 +91,28 @@
 - Riesgos
     - Por exceso: deshidratacion y golpe de calor
     - Por defecto: escalofrios, entumecimiento, hipotermia, congelacion
+
+###### 4. Radiaciones
+
+- Riesgos
+    - Vomitos, diarreas y hemorragias
+    - Quemaduras, lesiones oculares, cancer, muerte
+
+###### 5. Iluminacion
+
+- Riesgos
+    - Cansancio y fatiga visual
+    - Mareos y dolor de cabeza 
+
+#### Agentes Quimicos
+
+- Riesgos
+    - Irritacion en la piel o las mucosas
+    - Asfixia
+    - Efecto anestesico
+    - Corrosion o destruccion de los tejidos
+    - Reacciones alergicas
+    - Efectos cancerigenos
+    - Efectos mutagenos
+
+    
