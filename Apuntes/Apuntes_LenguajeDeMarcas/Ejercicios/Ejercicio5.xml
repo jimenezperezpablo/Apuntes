@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clases>
+
+    <clase>
+        <alumnos>
+            <nombre></nombre>
+            <edad></edad>
+            <notaMedia></notaMedia>
+        </alumnos>
+        <alumnos>
+            <nombre></nombre>
+            <edad></edad>
+            <notaMedia></notaMedia>
+        </alumnos>
+        <alumnos>
+            <nombre></nombre>
+            <edad></edad>
+            <notaMedia></notaMedia>
+        </alumnos>
+    </clase>
+
+    <clase>
+        <alumnos>
+            <nombre></nombre>
+            <edad></edad>
+            <notaMedia></notaMedia>
+        </alumnos>
+        <alumnos>
+            <nombre></nombre>
+            <edad></edad>
+            <notaMedia></notaMedia>
+        </alumnos>
+        <alumnos>
+            <nombre></nombre>
+            <edad></edad>
+            <notaMedia></notaMedia>
+        </alumnos>
+    </clase>
+
+
+</clases>

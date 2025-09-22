@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<recetas>
+
+    <receta>
+        <nombre></nombre>
+        <ingredientes>
+            <ingrediente></ingrediente>
+            <ingrediente></ingrediente>
+        </ingredientes>
+        <tiempoPreparacion></tiempoPreparacion>
+    </receta>
+
+
+    <receta>
+        <nombre></nombre>
+        <ingredientes>
+            <ingrediente></ingrediente>
+            <ingrediente></ingrediente>
+        </ingredientes>
+        <tiempoPreparacion></tiempoPreparacion>
+    </receta>
+
+</recetas>

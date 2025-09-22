@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<libros>
-
-    <libro1>
+<alumnos>
+    <alumno>
+        <nombre> </nombre>
+        <apellido> </apellido>
+        <edad></edad>
+        <email></email>
+    </alumno>
     
-     <titulo></titulo>
-     <autor></autor>
-     <anio></anio>
-     <editorial></editorial>
+    <alumno>
+        <nombre> </nombre>
+        <apellido> </apellido>
+        <edad></edad>
+        <email></email>
+    </alumno>
 
-    </libro1>
 
 
-</libros>
+</alumnos>
