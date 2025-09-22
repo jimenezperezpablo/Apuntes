@@ -19,8 +19,13 @@ Entendiendo el entorno de visual estudio y su compatibilidad con todo el ecosist
 
  Las variables son modificables
 
- Null y undefined seria nuestro 0 en la vida real ya que 0 no es = a null
+ **Null** y **undefined** seria nuestro 0 en la vida real ya que 0 no es = a null
 
 
 ### Declaracion de variables ###
+
+**Prompt**
+
+**Console.Log** 
+
 
