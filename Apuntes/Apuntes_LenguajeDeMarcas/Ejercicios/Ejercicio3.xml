@@ -3,22 +3,22 @@
 <recetas>
 
     <receta>
-        <nombre></nombre>
+        <nombre>Pollo al ajo</nombre>
         <ingredientes>
-            <ingrediente></ingrediente>
-            <ingrediente></ingrediente>
+            <ingrediente>Pollo</ingrediente>
+            <ingrediente>Ajo</ingrediente>
         </ingredientes>
-        <tiempoPreparacion></tiempoPreparacion>
+        <tiempoPreparacion>90</tiempoPreparacion>
     </receta>
 
 
     <receta>
-        <nombre></nombre>
+        <nombre>Lentejas con chorrizo</nombre>
         <ingredientes>
-            <ingrediente></ingrediente>
-            <ingrediente></ingrediente>
+            <ingrediente>Lentejas</ingrediente>
+            <ingrediente>Chorrizo</ingrediente>
         </ingredientes>
-        <tiempoPreparacion></tiempoPreparacion>
+        <tiempoPreparacion>50</tiempoPreparacion>
     </receta>
 
 </recetas>

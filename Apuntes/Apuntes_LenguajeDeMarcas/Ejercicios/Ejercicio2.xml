@@ -2,19 +2,16 @@
 
 <alumnos>
     <alumno>
-        <nombre> </nombre>
-        <apellido> </apellido>
-        <edad></edad>
-        <email></email>
+        <nombre>Carlos</nombre>
+        <apellido>Perez</apellido>
+        <edad>16</edad>
+        <email>carlitospro123@gmail.com</email>
     </alumno>
     
     <alumno>
-        <nombre> </nombre>
-        <apellido> </apellido>
-        <edad></edad>
-        <email></email>
+        <nombre>Laura</nombre>
+        <apellido>Garcia</apellido>
+        <edad>25</edad>
+        <email>LauraGr.2000@gmail.com</email>
     </alumno>
-
-
-
 </alumnos>

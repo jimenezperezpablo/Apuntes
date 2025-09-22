@@ -4,37 +4,37 @@
 
     <clase>
         <alumnos>
-            <nombre></nombre>
-            <edad></edad>
-            <notaMedia></notaMedia>
+            <nombre>Pablo</nombre>
+            <edad>18</edad>
+            <notaMedia>7</notaMedia>
         </alumnos>
         <alumnos>
-            <nombre></nombre>
-            <edad></edad>
-            <notaMedia></notaMedia>
+            <nombre>Luis</nombre>
+            <edad>17</edad>
+            <notaMedia>8</notaMedia>
         </alumnos>
         <alumnos>
-            <nombre></nombre>
-            <edad></edad>
-            <notaMedia></notaMedia>
+            <nombre>Carlos</nombre>
+            <edad>20</edad>
+            <notaMedia>5</notaMedia>
         </alumnos>
     </clase>
 
     <clase>
         <alumnos>
-            <nombre></nombre>
-            <edad></edad>
-            <notaMedia></notaMedia>
+            <nombre>Juan</nombre>
+            <edad>15</edad>
+            <notaMedia>6</notaMedia>
         </alumnos>
         <alumnos>
-            <nombre></nombre>
-            <edad></edad>
-            <notaMedia></notaMedia>
+            <nombre>Carlos</nombre>
+            <edad>15</edad>
+            <notaMedia>8</notaMedia>
         </alumnos>
         <alumnos>
-            <nombre></nombre>
-            <edad></edad>
-            <notaMedia></notaMedia>
+            <nombre>Clara</nombre>
+            <edad>15</edad>
+            <notaMedia>10</notaMedia>
         </alumnos>
     </clase>
 
