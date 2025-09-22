@@ -1,13 +1,11 @@
 <script>
 
 // variables
-let totalCuenta = prompt ("Escriba el total de su cuenta")
-let porcentajePropina = prompt("Escriba el porcentaje que desea dejar de propina" )
-// cambio el string a numero
-let numeroPropina = Number (porcentajePropina)
-let cuenta = Number (totalCuenta)
+let totalCuenta = Number(prompt ("Escriba el total de su cuenta"))
+let porcentajePropina = Number(prompt("Escriba el porcentaje que desea dejar de propina" ))
+
 //calculo el dinero de propina
-let totalPropina = (cuenta * (numeroPropina/100))
+let totalPropina = (totalCuenta * (porcentajePropina/100))
 
 // muestro el numero de propina mas la cuenta
 console.log(cuenta + totalPropina)
