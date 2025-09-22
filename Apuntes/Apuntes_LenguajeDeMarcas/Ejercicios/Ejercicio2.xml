@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<libros>
+
+    <libro1>
+    
+     <titulo></titulo>
+     <autor></autor>
+     <anio></anio>
+     <editorial></editorial>
+
+    </libro1>
+
+
+</libros>
