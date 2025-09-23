@@ -6,9 +6,13 @@
 
     //transformo en numeros enteros
     
-    let segundos = parseInt(segundosIni)
-    let minutos = parseInt(segundosIni / 60)
     let horas = parseInt(segundosIni / 3600)
+    let minutosCalculo = (segundosIni - (horas * 3600) )
+    let minutos = parseInt(minutosCalculo / 60)
+    let segundosCalculo = (minutosCalculo - (minutos * 60))
+    let segundos = parseInt (segundosCalculo /60)
+    
+
 
     //muestro en consola
 
