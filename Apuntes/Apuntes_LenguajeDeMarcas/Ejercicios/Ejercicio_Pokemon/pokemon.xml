@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pokemon [
+    <!ELEMENT pokemon (nombre, tipo, nivel?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT nivel (#PCDATA)>
+]>
+
+
+<pokemon>
+    <nombre></nombre>
+    <tipo></tipo>
+    <nivel></nivel>
+</pokemon>
