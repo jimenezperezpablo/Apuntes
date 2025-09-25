@@ -1,0 +1,28 @@
+<script>
+
+    let numero1 = Number(prompt("Introduce el primer numero"))
+    let numero2 = Number(prompt("Introduce el segundo numero"))
+    let operacion = prompt("Introduce la operacion que quieres realizar")
+
+    let operacionSuma = (operacion == "+")
+    let operacionResta = (operacion == "-")
+    let operacionMultiplica = (operacion == "*")
+    let operacionDivide = (operacion == "/")
+
+    if (operacionSuma) {
+        console.log(numero1 + numero2)
+    }
+    else if (operacionResta) {
+        console.log(numero1 - numero2)
+    }
+    else if (operacionMultiplica) {
+        console.log(numero1 * numero2)
+    }
+    else if (operacionDivide) {
+        console.log(numero1 / numero2)
+    }
+    else{
+        console.log("Este operador no es valido")
+    }
+
+</script>
