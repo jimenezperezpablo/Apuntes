@@ -1,0 +1,20 @@
+<script>
+
+    let promedioAcademico = Number(prompt("Introduce tu promedio Academico"))
+    let ingresoFamiliarAnual = Number(prompt("Introduce el ingreso familiar anual"))
+    let mensaje = ""
+
+    if (promedioAcademico >= 8 && ingresoFamiliarAnual <= 20000) {
+        mensaje = "Beca completa"
+    }
+    else if (promedioAcademico >= 8 && ingresoFamiliarAnual > 20000) {
+        mensaje = "Beca parcial"
+    }
+    else if(promedioAcademico < 8){
+        mensaje = "No tiene Beca"
+    }
+
+
+
+    console.log(mensaje)
+</script>

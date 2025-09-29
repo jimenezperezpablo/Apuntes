@@ -12,6 +12,9 @@
     else if(duracionLlamada > 10){
         mensaje = "El coste de su llamada es €" + (((duracionLlamada - 10)*0.3) + 5 )
     }
+    else{
+        mensaje = "Ese numero de minutos no esta permitido"
+    }
 
     console.log(mensaje)
 </script>
