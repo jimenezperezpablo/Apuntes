@@ -1,0 +1,18 @@
+<script>
+
+    let lado1 = Number(prompt("Introduce la medida del primer lado"))
+    let lado2 = Number(prompt("Introduce la medida del segundo lado"))
+    let lado3 = Number(prompt("Introduce la medida del tercer lado"))
+
+
+    if (lado1 == lado2 && lado2 == lado3){
+        console.log("Es equilatero")
+    }
+    else if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {
+        console.log("Es isosceles")
+    }
+    else{
+        console.log("Es Escaleno")
+    }
+
+</script>

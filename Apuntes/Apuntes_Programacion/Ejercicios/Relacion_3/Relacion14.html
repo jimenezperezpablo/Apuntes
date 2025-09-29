@@ -1,0 +1,21 @@
+<script>
+
+    let temperaturaUsuario = Number(prompt("Introduce la temperatura acutal"))
+    let mensaje = ""
+    if (temperaturaUsuario < 0) {
+        mensaje = "Muy Frio"
+    }
+    else if (temperaturaUsuario < 16) {
+        mensaje = "Frio"
+    }
+    else if (temperaturaUsuario < 26){
+        mensaje = "Templado"
+    }
+    else if(temperaturaUsuario > 25){
+        mensaje = "Caliente"
+    }
+
+
+    console.log(mensaje)
+
+</script>

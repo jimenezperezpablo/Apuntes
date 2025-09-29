@@ -1,0 +1,24 @@
+<script>
+    let salarioUsuario = Number(prompt("Introduce tu salario anual"))
+    let impuestosCalculo = Number
+    let mensaje = ""
+
+    if (salarioUsuario < 10000) {
+        mensaje = "0% de Impuestos"
+    }
+    else if (salarioUsuario > 9999 && salarioUsuario < 20000) {
+        impuestosCalculo = (salarioUsuario * 0.1)
+        mensaje = "10% de impuestos son: " + impuestosCalculo
+    }
+    else if (salarioUsuario > 19999 && salarioUsuario < 40000) {
+        impuestosCalculo = (salarioUsuario * 0.2)
+        mensaje = "20% de impuestos son: " + impuestosCalculo
+    }
+    else if (salarioUsuario > 40000) {
+        impuestosCalculo = (salarioUsuario * 0.3)
+        mensaje = "30% de impuestos son: " + impuestosCalculo
+    }
+
+    console.log(mensaje)
+
+</script>
