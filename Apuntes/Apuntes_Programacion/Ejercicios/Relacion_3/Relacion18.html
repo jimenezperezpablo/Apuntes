@@ -10,10 +10,12 @@
     else if (promedioAcademico >= 8 && ingresoFamiliarAnual > 20000) {
         mensaje = "Beca parcial"
     }
-    else if(promedioAcademico < 8){
+    else if (promedioAcademico < 8) {
         mensaje = "No tiene Beca"
     }
-
+    else {
+        mensaje = "Datos no validos"
+    }
 
 
     console.log(mensaje)

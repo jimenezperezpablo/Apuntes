@@ -3,14 +3,24 @@
     let mensaje = ""
     let horasParking = Number(prompt("introduce las horas que has estado en el estacionamiento"))
 
-    if(horasParking <= 2){
-        
+    if (horasParking <= 2) {
+
+        mensaje = "El coste de su estacionamiento " + (horasParking * 5)
+
+    }
+    else if (horasParking <= 5) {
+
+        mensaje = "El coste de su estacionamiento " + (horasParking * 4)
+    }
+    else if (horasParking > 5) {
+
+        mensaje = "El coste de su estacionamiento " + (((horasParking - 5) * 3) + 20)
+    }
+    else {
+
+        mensaje = "Error"
     }
 
-
-
-
-    
     console.log(mensaje)
 
 </script>

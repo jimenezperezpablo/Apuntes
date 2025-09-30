@@ -3,18 +3,21 @@
     let anguloIntroduccido = Number(prompt("Introducce el angulo"))
     let mensaje = ""
 
-    if(anguloIntroduccido == 90){
+    if (anguloIntroduccido == 90) {
         mensaje = "Angulo Recto"
     }
-    else if(anguloIntroduccido < 90){
+    else if (anguloIntroduccido < 90) {
         mensaje = "Angulo agudo"
 
     }
-    else if(anguloIntroduccido > 90 && anguloIntroduccido < 180){
+    else if (anguloIntroduccido > 90 && anguloIntroduccido < 180) {
         mensaje = "Angulo Obtuso"
     }
-    else if(anguloIntroduccido == 180){
+    else if (anguloIntroduccido == 180) {
         mensaje = "Angulo LLano"
+    }
+    else {
+        mensaje = "Angulo no valido"
     }
 
     console.log(mensaje)

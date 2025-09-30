@@ -1,6 +1,6 @@
 <script>
     let salarioUsuario = Number(prompt("Introduce tu salario anual"))
-    let impuestosCalculo = Number
+    let impuestosCalculo = 0
     let mensaje = ""
 
     if (salarioUsuario < 10000) {
@@ -18,7 +18,12 @@
         impuestosCalculo = (salarioUsuario * 0.3)
         mensaje = "30% de impuestos son: " + impuestosCalculo
     }
+    else {
+        mensaje = "Salario no valido"
+    }
 
     console.log(mensaje)
 
 </script>
+
+

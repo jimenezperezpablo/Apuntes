@@ -5,14 +5,17 @@
     if (temperaturaUsuario < 0) {
         mensaje = "Muy Frio"
     }
-    else if (temperaturaUsuario < 16) {
+    else if (temperaturaUsuario <= 15) {
         mensaje = "Frio"
     }
-    else if (temperaturaUsuario < 26){
+    else if (temperaturaUsuario <= 25) {
         mensaje = "Templado"
     }
-    else if(temperaturaUsuario > 25){
+    else if (temperaturaUsuario > 25) {
         mensaje = "Caliente"
+    }
+    else {
+        mensaje = "Temperatura no valida"
     }
 
 

@@ -1,0 +1,26 @@
+<script>
+    let mensaje = ""
+    let puntuacionCredito = Number(prompt("Introduce tu puntuacion de credito")) 
+    let tiempoCliente = Number(prompt("Introduce los años que lleva siendo cliente"))
+
+    if(puntuacionCredito > 750 && tiempoCliente > 5){
+        
+        mensaje = "Se le aprueba un credito premium"
+
+    }
+    else if(puntuacionCredito > 650 && tiempoCliente >= 2 ){
+
+        mensaje = "Se le aprueba un credito estandar"
+    }
+    else if(puntuacionCredito <= 650 && tiempoCliente <= 2){
+
+        mensaje = "Se le a rechazado el credito"
+    }
+    else{
+
+        mensaje = "Introduce valores adecuados"
+    }
+
+    console.log(mensaje)
+
+</script>
