@@ -1,21 +1,26 @@
 <script>
 
-    let duracionLlamada = Number(prompt("Introduce cuantos minutos a durado su llamada:"))
+    let duracionLlamada = prompt("Introduce cuantos minutos a durado su llamada:")
+    let duracion = Number(duracionLlamada)
+    let precio = 0
     let mensaje = ""
 
-    if (duracionLlamada <= 3) {
-        mensaje = "Su llamada es gratis"
-    }
-    else if (duracionLlamada > 3 && duracionLlamada <= 10) {
-        mensaje = "El coste de su llamada es €" + duracionLlamada * 0.5
-    }
-    else if (duracionLlamada > 10) {
-        mensaje = "El coste de su llamada es €" + (((duracionLlamada - 10) * 0.3) + 5)
-    }
-    else {
-        mensaje = "Ese numero de minutos no esta permitido"
-    }
+    if (!(duracion >= 0)) {
+        mensaje = "Entrada no valida introduzca un numero valido"
+    } else {
+        const PRIMEROSGRATIS = 3
+        const LIMITESEGUNDOTRAM = 10
+        const PRECIOSEGUNDOTRAMO = 0.5
+        const PRECIOTERCERTRAMO = 0.3
+        // Linea 16 - 23 necesito explicacion
+        if (duracion > LIMITESEGUNDOTRAM) {
+            precio = (duracion - LIMITESEGUNDOTRAM) * PRECIOTERCERTRAMO
+        }
+        if (duracion > PRIMEROSGRATIS) {
+            precio = precio + (duracion - PRIMEROSGRATIS) * PRECIOSEGUNDOTRAMO
+        }
 
-
+        mensaje = "El precio de la llamada de " + duracionLlamada + " minutos es: " + precio.toFixed(2) + " €"
+    }
     console.log(mensaje)
 </script>
