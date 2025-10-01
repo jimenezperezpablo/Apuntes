@@ -4,37 +4,24 @@
     let alturaUsu = Number(prompt("Introduce tu altura en M"))
     let calculoAltura = alturaUsu * alturaUsu
 
-
     if (pesoUsu / calculoAltura < 0) {
-
         mensaje = "Valores no validos"
-
     }
     else if (pesoUsu / calculoAltura < 18.5) {
-
         mensaje = "Tiene un peso bajo"
-
     }
     else if (pesoUsu / calculoAltura >= 18.5) {
-
         mensaje = "Tiene un peso normal"
-
     }
     else if (pesoUsu / calculoAltura >= 25) {
-
         mensaje = "Tiene Sobrepeso"
-
     }
     else if (pesoUsu / calculoAltura >= 30) {
-
         mensaje = "Obesidad"
     }
     else {
-
         mensaje = "Valores no validos"
     }
-
-
     console.log(mensaje)
 
 </script>

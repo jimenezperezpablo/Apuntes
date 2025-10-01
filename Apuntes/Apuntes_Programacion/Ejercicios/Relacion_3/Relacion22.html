@@ -5,27 +5,20 @@
     jugador1 = jugador1.toLowerCase();
     jugador2 = jugador2.toLowerCase();
 
-
     if ((jugador1 == "piedra" && jugador2 == "papel") || (jugador1 == "papel" && jugador2 == "tijera")
         || (jugador1 == "tijera" && jugador2 == "piedra")) {
-
         mensaje = "El jugador 2 gana"
     }
     else if ((jugador1 == "piedra" && jugador2 == "tijera") || (jugador1 == "papel" && jugador2 == "piedra")
         || (jugador1 == "tijera" && jugador2 == "papel")) {
-
         mensaje = "El jugador 1 gana"
     }
     else if (jugador1 == jugador2) {
-
         mensaje = "Es un empate"
-
     }
     else {
-
         mensaje = "Introduce valores validos"
     }
-
     console.log(mensaje)
 
 </script>
