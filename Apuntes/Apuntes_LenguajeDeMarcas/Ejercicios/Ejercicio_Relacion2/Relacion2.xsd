@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pedidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pedido">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cliente">
+                <xs:complexType>
+                <xs:element name="nombre" type="string"/>
+                <xs:element name="email" type="string"/>
+                <xs:element name="telefono" type="string"/>
+                </xs:complexType>
+
+              
+
+              </xs:element>
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>

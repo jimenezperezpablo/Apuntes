@@ -1,0 +1,27 @@
+
+<pedidos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relacion2.xsd">
+ 
+ 
+ 
+ 
+    <pedido codigo="A101">
+    <cliente>
+      <nombre>Ana García</nombre>
+      <email>ana@example.com</email>
+      <telefono>678-123-456</telefono>
+    </cliente>
+    <productos>
+      <producto>
+        <nombre>Ratón inalámbrico</nombre>
+        <precio>19.95</precio>
+        <cantidad>2</cantidad>
+      </producto>
+      <producto>
+        <nombre>Teclado mecánico</nombre>
+        <precio>79.99</precio>
+        <cantidad>1</cantidad>
+      </producto>
+    </productos>
+    <estado>Enviado</estado>
+  </pedido>
+</pedidos>
