@@ -15,6 +15,7 @@
         // Linea 16 - 23 necesito explicacion
         if (duracion > LIMITESEGUNDOTRAM) {
             precio = (duracion - LIMITESEGUNDOTRAM) * PRECIOTERCERTRAMO
+            duracion = LIMITESEGUNDOTRAM
         }
         if (duracion > PRIMEROSGRATIS) {
             precio = precio + (duracion - PRIMEROSGRATIS) * PRECIOSEGUNDOTRAMO
