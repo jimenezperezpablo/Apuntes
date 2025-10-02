@@ -3,7 +3,8 @@
   <xs:element name="pedidos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="pedido" maxOccurs="unbounded">
+        <xs:element name="pedido">
+          
           <xs:complexType>
             <xs:sequence>
               <!-- Cliente -->
@@ -42,7 +43,7 @@
                         <xs:sequence>
                           <xs:element name="nombre" type="xs:string"/>
                           
-                          <!-- Precio positivo -->
+                          <!-- Precio -->
                           <xs:element name="precio">
                             <xs:simpleType>
                               <xs:restriction base="xs:decimal">
@@ -53,7 +54,6 @@
 
                           <xs:element name="cantidad" type="xs:integer"/>
                         </xs:sequence>
-                        <!-- atributo id -->
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -80,6 +80,8 @@
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
+
+            
           </xs:complexType>
         </xs:element>
       </xs:sequence>
