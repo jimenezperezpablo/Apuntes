@@ -1,0 +1,19 @@
+<factura numero="F2023-001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relacion100.xsd">
+  <cliente>
+    <nombre>Pedro Gómez</nombre>
+    <email>pedro@example.com</email>
+  </cliente>
+  <articulos>
+    <articulo codigo="A12">
+      <descripcion>Monitor 24 pulgadas</descripcion>
+      <precio>129.99</precio>
+      <cantidad>2</cantidad>
+    </articulo>
+    <articulo codigo="B07">
+      <descripcion>Cable HDMI</descripcion>
+      <precio>9.99</precio>
+      <cantidad>3</cantidad>
+    </articulo>
+  </articulos>
+  <total>289.95</total>
+</factura>

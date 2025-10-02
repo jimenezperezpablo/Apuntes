@@ -1,0 +1,75 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+      <!-- CLIENTE -->
+        <xs:element name="cliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="email" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ARTICULOS -->
+        <xs:element name="articulos">
+          <xs:complexType>
+            <xs:sequence>
+
+              <!-- ARTICULO -->
+
+              <xs:element name="articulo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="descripcion" type="xs:string"/>
+                    <xs:element name="precio" type="xs:decimal"/>
+                    <xs:element name="cantidad" type="xs:integer"/>
+                  </xs:sequence>
+
+                  <!-- SE ESCRIBE DESPUES DE ESTO PARA QUE VALIDE A TODOS LOS "articulo" -->
+                  <xs:attribute name="codigo" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z]\d{2}"></xs:pattern>
+                      </xs:restriction>
+                    </xs:simpleType>
+
+
+
+
+
+
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+
+        </xs:element>
+
+        <!-- TOTAL -->
+
+        <xs:element name="total" type="xs:float"/>
+      </xs:sequence>
+
+       <!-- RESTRICCION -->
+
+      <xs:attribute name="numero" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="F\d{4}-\d{3}"/>
+          </xs:restriction>
+        </xs:simpleType>
+
+
+
+      </xs:attribute>
+
+
+
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,9 @@
+
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Relacion88.xsd">
+
+  <titulo>El Quijote</titulo>
+  <autor>Miguel de Cervantes</autor>
+  <anio>1605</anio>
+  <precio>19.95</precio>
+</libro>

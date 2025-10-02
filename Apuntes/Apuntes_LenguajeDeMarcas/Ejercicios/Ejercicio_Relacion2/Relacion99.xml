@@ -1,0 +1,9 @@
+<persona id="101" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relacion99.xsd">
+  <nombre>Laura</nombre>
+  <edad>29</edad>
+  <direccion>
+    <calle>Gran Vía 45</calle>
+    <ciudad>Madrid</ciudad>
+    <codigoPostal>28013</codigoPostal>
+  </direccion>
+</persona>

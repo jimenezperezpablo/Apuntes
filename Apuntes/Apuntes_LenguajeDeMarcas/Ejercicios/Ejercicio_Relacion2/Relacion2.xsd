@@ -1,24 +1,89 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
   <xs:element name="pedidos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="pedido">
+        <xs:element name="pedido" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <!-- Cliente -->
               <xs:element name="cliente">
                 <xs:complexType>
-                <xs:element name="nombre" type="string"/>
-                <xs:element name="email" type="string"/>
-                <xs:element name="telefono" type="string"/>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    
+                    <!-- Email con regex -->
+                    <xs:element name="email">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value=".+@.+\..+"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+
+                    <!-- Teléfono con regex -->
+                    <xs:element name="telefono">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="\d{3}-\d{3}-\d{3}"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
                 </xs:complexType>
-
-              
-
               </xs:element>
-              
+
+              <!-- Productos -->
+              <xs:element name="productos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="producto" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre" type="xs:string"/>
+                          
+                          <!-- Precio positivo -->
+                          <xs:element name="precio">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:decimal">
+                                <xs:minExclusive value="0"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+
+                          <xs:element name="cantidad" type="xs:integer"/>
+                        </xs:sequence>
+                        <!-- atributo id -->
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!-- Estado restringido -->
+              <xs:element name="estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Pendiente"/>
+                    <xs:enumeration value="Enviado"/>
+                    <xs:enumeration value="Entregado"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
+
+            <!-- atributo codigo con regex -->
+            <xs:attribute name="codigo" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="A\d{3}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+</xs:schema>
