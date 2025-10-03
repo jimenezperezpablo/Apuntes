@@ -1,6 +1,8 @@
 #!/bin/bash
 cd proyecto/docs
-nano manual.txt
-Capítulo 1: Introducción
+echo "Capítulo 1: Introducción
 Capítulo 2: Instalación
-Capítulo 3: Uso Básico
+Capítulo 3: Uso Básico" > manual.txt;
+cat manual.txt
+head manual.txt
+head -2 manual.txt
