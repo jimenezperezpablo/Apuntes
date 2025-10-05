@@ -8,6 +8,5 @@
             <xs:element name="precio" type="xs:decimal"/>
         </xs:sequence>
         </xs:complexType>
-    
     </xs:element>
 </xs:schema>

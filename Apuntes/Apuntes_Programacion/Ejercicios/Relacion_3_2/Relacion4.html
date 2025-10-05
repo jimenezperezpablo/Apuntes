@@ -1,0 +1,32 @@
+<script>
+    let mensaje = ""
+    let temperaturaActual = Number(prompt("Introduce la temperatura actual"))
+    let horaActual = Number(prompt("Introduce la hora del dia"))
+
+    if(horaActual > 24){
+        mensaje = "Las horas deben ser entre 0 y 24"
+    }
+    else if(temperaturaActual < 15 && horaActual>= 6 && horaActual<=20){
+        mensaje = "Ir con abrigo"
+    }
+    else if(temperaturaActual <= 15 && horaActual<6 || horaActual>20){
+        mensaje = "Quedarse en casa con una bebida caliente"
+    }
+    else if(temperaturaActual > 15 && temperaturaActual <=30 && horaActual>6 && horaActual<20){
+        mensaje = "Hacer deporte al aire libre"
+    }
+    else if(temperaturaActual > 15 && temperaturaActual <=30 && horaActual<6 || horaActual>20 ){
+        mensaje = "Salir a pasear por la ciudad"
+    }
+    else if(temperaturaActual > 30 && horaActual>12 && horaActual<18){
+        mensaje = "Ir a la piscina o la playa"
+    }
+    else if(temperaturaActual>30 && horaActual<12 || horaActual>18 ){
+        mensaje = "Evitar esfuerzos, descansar"
+    }
+    else{
+        mensaje = "Tus valores no son validos, las horas van de 0 a las 23"
+    }
+
+    console.log(mensaje)
+</script>

@@ -3,41 +3,50 @@
     let mencionE = "Con mencion Especial"
     let notaUsuario = Number(prompt("Introduce tu nota numerica"))
     let asistenciaUsuario = Number(prompt("Introduce tu porcentaje de asitencias"))
-    let presentarFinal = prompt("Introduce si entrego o no el trabajo final") 
+    let presentarFinal = prompt("Introduce si entrego o no el trabajo final")
     presentarFinal = presentarFinal.toLowerCase();
 
 
-    if ( notaUsuario >= 50 && asistenciaUsuario >= 75){
+    if (notaUsuario >= 50 && asistenciaUsuario >= 75) {
 
-        if(notaUsuario < 69){
+        if (notaUsuario < 69) {
 
             mensaje = "Aprobado"
 
         }
 
-        if(presentarFinal == "no"){
+        if (presentarFinal == "no") {
 
             mensaje = "No presentado"
         }
 
-        if(notaUsuario < 89){
+        if (notaUsuario < 89) {
 
             mensaje = "Notable "
 
-            if(asistenciaUsuario == 100){
+            if (asistenciaUsuario == 100) {
 
-            mensaje = mensaje + mencionE
+                mensaje = mensaje + mencionE
+            }
+
         }
 
+        if (notaUsuario <= 90) {
+
+            mensaje = "SobreSaliente"
+
+            if (presentarFinal == "si" && asistenciaUsuario == 100) {
+
+                mensaje = mensaje, "Matricula de Honor"
+
+            }
+
         }
-
-        
-
     }
 
-    else{
+    else {
         mensaje = "Esta suspenso"
-        if(notaUsuario < 30){
+        if (notaUsuario < 30) {
             mensaje = "Esta suspenso grave"
         }
     }

@@ -1,0 +1,30 @@
+<script>
+    let mensaje = ""
+    let usuarioContraseña = prompt("Introduce tu contraseña")
+    let numeroCaracteres = Number(usuarioContraseña.length)
+    const contraseñaMin = 6
+    if (numeroCaracteres <= contraseñaMin) {
+        mensaje = "Necesitas tener mas de 6 caracteres para tu contraseña"
+    }
+    if (numeroCaracteres >= contraseñaMin) {
+        let caracterObligatorio1 = usuarioContraseña.indexOf("@");
+        let caracterObligatorio2 = usuarioContraseña.indexOf("#");
+        let caracterObligatorio3 = usuarioContraseña.indexOf("!");
+
+        if (caracterObligatorio1 == -1 && caracterObligatorio2 == -1 && caracterObligatorio3 == -1) {
+            mensaje = "Debil"
+
+        }
+        else {
+
+            if (numeroCaracteres >= 10) {
+                mensaje = "Contraseña Fuerte"
+            }
+            else if (numeroCaracteres < 10 && numeroCaracteres > 6) {
+                mensaje = "contraseña Media"
+            }
+        }
+
+    }
+    console.log(mensaje)
+</script>

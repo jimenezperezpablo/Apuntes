@@ -13,16 +13,16 @@
                   <xs:sequence>
                     <xs:element name="nombre" type="xs:string"/>
                     
-                    <!-- Email con regex -->
+                    <!-- Email -->
                     <xs:element name="email">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
-                          <xs:pattern value=".+@.+\..+"/>
+                          <xs:pattern value="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"/>
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
 
-                    <!-- Teléfono con regex -->
+                    <!-- Teléfono -->
                     <xs:element name="telefono">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
@@ -72,7 +72,7 @@
               </xs:element>
             </xs:sequence>
 
-            <!-- atributo codigo con regex -->
+            <!-- codigo -->
             <xs:attribute name="codigo" use="required">
               <xs:simpleType>
                 <xs:restriction base="xs:string">
