@@ -1,3 +1,5 @@
 #!/bin/bash
-mkdir proyecto/backup_docs ; cp proyecto/docs/{manual.txt,guia.txt} proyecto/backup_docs ; mkdir proyecto/config_backup ; cp proyecto/config/* proyecto/config_backup ; cd proyecto ; tree
-
+cd proyecto
+mv src/scrip1.sh test/resultados/
+mv src/script2.sh src/script_final.sh
+mv logs/backup test/
