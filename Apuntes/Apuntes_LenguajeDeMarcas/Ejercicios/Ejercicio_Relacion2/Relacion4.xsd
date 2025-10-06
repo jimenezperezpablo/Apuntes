@@ -1,0 +1,65 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="clase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumno" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+
+
+              <xs:element name="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="([A-Z])+([a-z])*"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+
+              <xs:element name="edad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="6"/>
+                    <xs:maxInclusive value="18"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+
+
+
+              <xs:element name="notas">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nota" maxOccurs="5" minOccurs="1">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:float">
+                          <xs:minInclusive value="0"/>
+                          <xs:maxInclusive value="10"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                      
+
+                    
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+
+              <xs:element name="dni">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="\d{8}[A-Z]+"></xs:pattern>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+             <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+          </xs:complexType>
+
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

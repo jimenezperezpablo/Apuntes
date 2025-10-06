@@ -1,0 +1,28 @@
+<clase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relacion4.xsd">
+  <alumno id="1">
+    <nombre>Julio</nombre>
+    <edad>18</edad>
+    <notas>
+      <nota>1.5</nota>
+      <nota>1.6</nota>
+      <nota>3.7</nota>
+      <nota>5.8</nota>
+      <nota>10</nota>
+    </notas>
+    <dni>12345678A</dni>
+  </alumno>
+
+    <alumno id="2">
+    <nombre>Pablo</nombre>
+    <edad>15</edad>
+    <notas>
+      <nota>1.5</nota>
+      <nota>1.6</nota>
+      <nota>3.7</nota>
+      <nota>5.8</nota>
+      <nota>8.2</nota>
+    </notas>
+    <dni>78995588B</dni>
+  </alumno>
+  
+</clase>

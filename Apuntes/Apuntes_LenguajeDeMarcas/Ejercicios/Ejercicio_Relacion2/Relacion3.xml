@@ -1,0 +1,28 @@
+<calendario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relacion3.xsd">
+  <evento id="1">
+    <titulo>Conferencia</titulo>
+    <fecha>2027-09-22</fecha>
+    <hora>18:00:00</hora>
+    <ubicacion>Calle Ogijares</ubicacion>
+    <codigoPostal>15147</codigoPostal>
+  </evento>
+
+    <evento id="2">
+    <titulo>Concierto</titulo>
+    <fecha>2028-05-20</fecha>
+    <hora>09:00:00</hora>
+    <ubicacion>Calle Otura</ubicacion>
+    <codigoPostal>15879</codigoPostal>
+  </evento>
+
+    <evento id="3">
+    <titulo>Reunion</titulo>
+    <fecha>2025-04-21</fecha>
+    <hora>19:00:00</hora>
+    <ubicacion>Calle Armilla</ubicacion>
+    <codigoPostal>15789</codigoPostal>
+  </evento>
+
+
+
+</calendario>
