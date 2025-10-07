@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reservas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Ejercicio3.xsd">
+  <reserva codigo="R001">
+    <cliente>
+      <nombre>Lucía Martínez</nombre>
+      <dni>12345678Z</dni>
+    </cliente>
+    <habitacion tipo="Doble" numero="202"/>
+    <fechaEntrada>2025-07-01</fechaEntrada>
+    <fechaSalida>2025-07-05</fechaSalida>
+    <precioTotal>480.50</precioTotal>
+  </reserva>
+</reservas>

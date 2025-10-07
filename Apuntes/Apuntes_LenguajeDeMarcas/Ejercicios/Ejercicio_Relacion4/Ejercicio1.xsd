@@ -1,0 +1,100 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="agencia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="paquetes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="paquete" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="destino" type="xs:string" />
+
+                                        <xs:element name="precio">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:minInclusive value="0"></xs:minInclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+
+
+                                        </xs:element>
+                                        <xs:element name="fechaIncio" type="xs:date"></xs:element>
+                                        <xs:element name="fechaFin" type="xs:date"></xs:element>
+
+
+                                        <xs:element name="tipo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Aventura" />
+                                                    <xs:enumeration value="Relax" />
+                                                    <xs:enumeration value="Cultural" />
+                                                    <xs:enumeration value="Familiar" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+
+
+                                        </xs:element>
+                                        <xs:element name="cliente">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="([A-Z])+([a-z])*" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="dni">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="\d{8}[A-Z]+" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="edad">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:float">
+                                                                <xs:minInclusive value="18"></xs:minInclusive>
+                                                                <xs:maxInclusive value="99"></xs:maxInclusive>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+
+
+                                                    </xs:element>
+                                                    <xs:element name="email">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern
+                                                                    value="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+
+
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="codigo" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="PKT-\d{4}"></xs:pattern>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+
+    </xs:element>
+
+
+</xs:schema>

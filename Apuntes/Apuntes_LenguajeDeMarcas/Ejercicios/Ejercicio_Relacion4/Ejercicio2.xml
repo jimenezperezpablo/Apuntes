@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Ejercicio2.xsd">
+
+
+    <producto id="15">
+        <nombre></nombre>
+        <categoria>Periferico</categoria>
+        <precio>89.99</precio>
+        <stock>15</stock>
+        <proveedor>
+            <nombre></nombre>
+            <telefono>698-214-456</telefono>
+            <pais></pais>
+        </proveedor>
+    </producto>
+</inventario>

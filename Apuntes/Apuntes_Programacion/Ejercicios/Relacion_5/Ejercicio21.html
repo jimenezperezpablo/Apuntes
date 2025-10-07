@@ -1,0 +1,27 @@
+<script>
+
+    let numeroUsu1 = parseInt(prompt("introduce un numero"))
+    mensaje = ""
+    espacios = ""
+    asteriscos = ""
+    contieneE = " "
+    contieneA = "*"
+
+    for (let i = 0; i < numeroUsu1; i++) {
+
+        espacios = ""
+
+        asteriscos += contieneA
+
+        for (let j = 0; j < numeroUsu1 - i - 1; j++) {
+            espacios += contieneE
+
+
+        }
+        mensaje = espacios + asteriscos
+        console.log(mensaje);
+
+
+    }
+
+</script>

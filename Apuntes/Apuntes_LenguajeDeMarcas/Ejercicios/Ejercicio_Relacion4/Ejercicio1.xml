@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agencia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Ejercicio1.xsd">
+    <paquetes>
+        <paquete codigo="PKT-4578">
+            <destino>Calle</destino>
+            <precio>0.99</precio>
+            <fechaIncio>2025-12-12</fechaIncio>
+            <fechaFin>2025-12-25</fechaFin>
+            <tipo>Aventura</tipo>
+            <cliente>
+                <nombre>Pablo</nombre>
+                <dni>12345678A</dni>
+                <edad>18</edad>
+                <email>julio@afnskdjf.com</email>
+            </cliente>
+
+        </paquete>
+        <paquete codigo="PKT-4578">
+            <destino>Calle</destino>
+            <precio>0.99</precio>
+            <fechaIncio>2025-12-12</fechaIncio>
+            <fechaFin>2025-12-25</fechaFin>
+            <tipo>Aventura</tipo>
+            <cliente>
+                <nombre>Pablo</nombre>
+                <dni>12345678A</dni>
+                <edad>18</edad>
+                <email>julio@afnskdjf.com</email>
+            </cliente>
+
+        </paquete>
+
+    </paquetes>
+
+
+</agencia>
