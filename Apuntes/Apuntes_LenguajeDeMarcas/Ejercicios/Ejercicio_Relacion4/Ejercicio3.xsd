@@ -35,17 +35,17 @@
                             </xs:element>
 
 
-                            <xs:element name="habitacion">
-                                <xs:complexType>
-                                    <xs:attribute name="tipo" use="required">
-                                        <xs:simpleType>
-                                            <xs:restriction base="xs:string">
-                                                <xs:enumeration value="Simple"></xs:enumeration>
-                                                <xs:enumeration value="Doble"></xs:enumeration>
+                                <xs:element name="habitacion">
+                                    <xs:complexType>
+                                        <xs:attribute name="tipo" use="required">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Simple"></xs:enumeration>
+                                                    <xs:enumeration value="Doble"></xs:enumeration>
 
-                                            </xs:restriction>
-                                        </xs:simpleType>
-                                    </xs:attribute>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
 
 
                                     <xs:attribute name="numero" use="required">
