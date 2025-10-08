@@ -4,14 +4,21 @@
     let mensaje = ""
     let espacios = ""
     let asteriscos = ""
+    let asteriscos1 = ""
+    let asteriscos2 = ""
     let contieneE = " "
-    let contieneA = "*"
+    let contieneA = "**"
 
     for (let i = 0; i < numeroUsu1; i++) {
 
         espacios = ""
 
-        asteriscos += contieneA
+        
+
+        
+        asteriscos2 +=(i+1)
+        asteriscos1 += (i+1)
+
 
         for (let j = 0; j < numeroUsu1 - i - 1; j++) {
 
@@ -20,7 +27,9 @@
 
 
         }
-        mensaje = espacios + asteriscos
+
+        
+        mensaje = espacios +asteriscos2+asteriscos+ asteriscos1
 
 
         console.log(mensaje);
