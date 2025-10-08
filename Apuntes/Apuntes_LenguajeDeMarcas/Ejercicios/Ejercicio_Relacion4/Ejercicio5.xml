@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Ejercicio5.xsd">
+    <nombre>Hospital San Cecilio</nombre>
+    <departamento>
+      <nombre>Traumatología</nombre>
+      <medicoJefe>Julio Carlos</medicoJefe>
+      <paciente>
+        <dni>74898990X</dni>
+        <edad>15</edad>
+        <fechaIngreso>2025-12-08</fechaIngreso>
+        <diagnostico>Calors</diagnostico>
+        <tratamiento></tratamiento>
+      </paciente>
+      <paciente>
+        <dni>74898990X</dni>
+        <edad>17</edad>
+        <fechaIngreso>2024-12-08</fechaIngreso>
+        <diagnostico>Dolores</diagnostico>
+        <tratamiento>1 pastilla</tratamiento>
+      </paciente>
+    
+    </departamento>
+   
+  
+</hospital>

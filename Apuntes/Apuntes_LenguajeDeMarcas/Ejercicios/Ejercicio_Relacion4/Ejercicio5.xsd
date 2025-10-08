@@ -1,0 +1,76 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="hospital">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="departamento">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Urgencias"></xs:enumeration>
+                                        <xs:enumeration value="Pediatría"></xs:enumeration>
+                                        <xs:enumeration value="Traumatología"></xs:enumeration>
+                                        <xs:enumeration value="Oncología"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="medicoJefe">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="([A-ZÁÉÍÓÚÑ])+([a-záéíóúñ])+ ([A-ZÁÉÍÓÚÑ])+([a-záéíóúñ])*"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+
+                            <xs:element name="paciente" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dni">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern
+                                                        value="\d{8}[A-Z]+"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                        <xs:element name="edad">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="0" />
+                                                    <xs:maxInclusive value="120" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+
+                                        <xs:element name="fechaIngreso" type="xs:date" />
+
+
+                                        <xs:element name="diagnostico">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]+[a-z]+"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tratamiento" type="xs:string" minOccurs="0"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+
+                        </xs:sequence>
+                    </xs:complexType>
+
+
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

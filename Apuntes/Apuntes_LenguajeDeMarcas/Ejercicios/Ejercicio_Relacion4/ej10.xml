@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plataforma xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ej10.xsd">
+    <curso id="C001">
+        <titulo>Sistema Microinformaticos y Redes</titulo>
+        <duración horas="40" />
+        <nivel>Intermedio</nivel>
+        <profesor>
+            <nombre>Daniel Gomez</nombre>
+            <email>holaGyi@gmail.com</email>
+        </profesor>
+        <alumnos>
+            <alumno>
+                <nombre>Fernando Galvez</nombre>
+                <dni>12312310G</dni>
+                <nota>9.4</nota>
+            </alumno>
+            <alumno>
+                <nombre>Khaled Santos</nombre>
+                <dni>00000000A</dni>
+                <nota>6.2</nota>
+            </alumno>
+        </alumnos>
+    </curso>
+</plataforma>

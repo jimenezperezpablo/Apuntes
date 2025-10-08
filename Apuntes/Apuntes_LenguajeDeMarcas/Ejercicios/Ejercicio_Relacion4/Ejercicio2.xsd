@@ -20,6 +20,7 @@
                                 <xs:simpleType>
                                     <xs:restriction base="xs:decimal">
                                         <xs:pattern value="\d+\.\d{2}"></xs:pattern>
+                                        <xs:minInclusive value="0"></xs:minInclusive>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>

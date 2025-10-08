@@ -4,6 +4,7 @@
             <xs:sequence>
                 <xs:element name="reserva">
                     <xs:complexType>
+
                         <xs:sequence>
 
                             <xs:element name="cliente">
@@ -12,7 +13,8 @@
                                         <xs:element name="nombre">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
-                                                    <xs:pattern value="([A-ZÁÉÍÓÚÑ])+([a-záéíóúñ])+ ([A-ZÁÉÍÓÚÑ])+([a-záéíóúñ])*"></xs:pattern>
+                                                    <xs:pattern
+                                                        value="[A-ZÁÉÍÓÚÑ]+[a-záéíóúñ]+ [A-ZÁÉÍÓÚÑ]+[a-záéíóúñ]+"></xs:pattern>
                                                 </xs:restriction>
                                             </xs:simpleType>
 
