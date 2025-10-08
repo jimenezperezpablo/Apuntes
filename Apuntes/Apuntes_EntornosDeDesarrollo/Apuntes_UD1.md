@@ -7,6 +7,9 @@
 - **Commit** : Guarda una instantánea de los cambios preparados.
 - **Pull** : Obtén los últimos cambios de un repositorio remoto.
 - **Push** : Envía tus cambios a un repositorio remoto.
+- **main** : Representa la rama principal en el repositorio local. 
+- **origin/main** : Es un punto de referencia que indica la rama actual en el repositorio local. 
+- **stash** : almacenar temporalmente los cambios locales
 
 ## **2. Instalacion Inicial de Git**
 
