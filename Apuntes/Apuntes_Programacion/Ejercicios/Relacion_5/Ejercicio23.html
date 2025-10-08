@@ -2,41 +2,19 @@
 
     let numeroUsu1 = parseInt(prompt("introduce un numero"))
     mensaje = ""
-    espacios = 0
-    asteriscos = 0
+    espacios = ""
+    asteriscos = ""
     contieneE = "*"
     contieneA = " "
 
     for (let i = 0; i < numeroUsu1; i++) {
 
-        espacios = i
-
+        asteriscos = ""
         espacios += contieneA
-        
-
-        
-       
-        
         for (let j = 0; j < numeroUsu1 - i; j++) {
-
-            asteriscos = j + 1
-
             asteriscos += contieneE
-
-
         }
-
-        console.log(asteriscos)
-        console.log(espacios)
-
-        
-
-        
-
-
- 
-
-
+        console.log(espacios+asteriscos);
     }
 
 </script>
