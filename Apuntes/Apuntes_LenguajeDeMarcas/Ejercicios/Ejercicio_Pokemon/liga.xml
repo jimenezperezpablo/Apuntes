@@ -2,5 +2,12 @@
 
 <!DOCTYPE liga SYSTEM "liga.dtd">
 <liga>
-    
+    <entrenador>
+        <nombre></nombre>
+        <pokemon>
+            <nombre></nombre>
+            <tipo></tipo>
+            <nivel></nivel>
+        </pokemon>
+    </entrenador>
 </liga>
