@@ -1,0 +1,5 @@
+<!ELEMENT tienda (nombre,pokemon+)>
+<!ELEMENT pokemon (nombre,tipo+,precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

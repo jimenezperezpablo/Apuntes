@@ -1,0 +1,17 @@
+<!DOCTYPE curso [
+    <!ELEMENT curso (nombre,alumno+)>
+    <!ELEMENT alumno (nombre,apellido)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+]>
+<curso>
+    <nombre></nombre>
+    <alumno>
+        <nombre></nombre>
+        <apellido></apellido>
+    </alumno>
+    <alumno>
+        <nombre></nombre>
+        <apellido></apellido>
+    </alumno>
+</curso>

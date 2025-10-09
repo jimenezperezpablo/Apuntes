@@ -1,0 +1,12 @@
+<!DOCTYPE libro [
+<!ELEMENT libro (titulo, autor, editorial)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+]>
+
+<libro>
+    <titulo></titulo>
+    <autor></autor>
+    <editorial></editorial>
+</libro>

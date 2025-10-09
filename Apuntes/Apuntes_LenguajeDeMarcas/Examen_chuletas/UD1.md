@@ -8,9 +8,11 @@
 
 #### Conexion con mi archivo xml ####
 ```xsd
-<primerelemento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="archivo.xsd">
-</primerelemento>
+XML
+<elemento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relacion2.xsd"></elemento>
+
+XSD
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"></xs:schema>
 ```
 
 #### Como hacer atributos tipo ID ####
@@ -20,13 +22,13 @@ XML
 
 XSD
 
-<xs:element name="reserva">
+<xs:element name="nombre elemento">
     <xs:complexType>
 
         <xs:sequence>
         </xs:sequence>
 
-        <xs:attribute name="codigo" use="required">
+        <xs:attribute name="id" use="required">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                             <xs:pattern value="R\d{3}"></xs:pattern>
@@ -86,19 +88,6 @@ XSD
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
-
-
-
-
-        <xs:attribute name="numero" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:integer">
-                    <xs:pattern value="\d{3}"></xs:pattern>
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
-
-
     </xs:complexType>
 </xs:element>
 ```
@@ -148,6 +137,20 @@ XSD
     <xs:simpleType>
         <xs:restriction base="xs:string">
             <xs:pattern value="\d{3}-\d{3}-\d{3}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+```
+
+
+
+#### Email ####
+
+```xsd
+<xs:element name="email">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:element>

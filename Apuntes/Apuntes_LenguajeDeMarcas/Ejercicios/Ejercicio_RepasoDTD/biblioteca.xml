@@ -1,0 +1,49 @@
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (seccion+)>
+    <!ELEMENT seccion (nombre,libro+)>
+    <!ELEMENT libro (titulo,autor,anio?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+]>
+<biblioteca>
+    <seccion>
+        <nombre></nombre>
+        <libro>
+            <titulo></titulo>
+            <autor></autor>
+            <anio></anio>
+        </libro>
+        <libro>
+            <titulo></titulo>
+            <autor></autor>
+            <anio></anio>
+        </libro>
+        <libro>
+            <titulo></titulo>
+            <autor></autor>
+            <anio></anio>
+        </libro>
+    </seccion>
+
+        <seccion>
+        <nombre></nombre>
+        <libro>
+            <titulo></titulo>
+            <autor></autor>
+            <anio></anio>
+        </libro>
+        <libro>
+            <titulo></titulo>
+            <autor></autor>
+            <anio></anio>
+        </libro>
+        <libro>
+            <titulo></titulo>
+            <autor></autor>
+            <anio></anio>
+        </libro>
+    </seccion>
+    
+</biblioteca>
