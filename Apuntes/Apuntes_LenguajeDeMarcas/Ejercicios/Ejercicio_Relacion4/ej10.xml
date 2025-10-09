@@ -3,7 +3,7 @@
     xsi:noNamespaceSchemaLocation="ej10.xsd">
     <curso id="C001">
         <titulo>Sistema Microinformaticos y Redes</titulo>
-        <duración horas="40" />
+        <duracion horas="40"/>
         <nivel>Intermedio</nivel>
         <profesor>
             <nombre>Daniel Gomez</nombre>

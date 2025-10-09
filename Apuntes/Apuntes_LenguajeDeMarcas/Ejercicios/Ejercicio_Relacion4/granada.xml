@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE granadaCF SYSTEM "granadaCF.dtd">
+<granadaCF>
+  <club>
+    <nombre>Granada Club de Fútbol</nombre>
+    <fundacion>1931</fundacion>
+    <estadio>Nuevo Los Cármenes</estadio>
+    <capacidad>19336</capacidad>
+  </club>
+
+  <plantilla>
+    <jugador>
+      <nombre>Raúl Fernández</nombre>
+      <dorsal>1</dorsal>
+      <posicion>Portero</posicion>
+      <nacionalidad>España</nacionalidad>
+      <edad>34</edad>
+    </jugador>
+    <jugador>
+      <nombre>Ricard Sánchez</nombre>
+      <dorsal>12</dorsal>
+      <posicion>Defensa</posicion>
+      <nacionalidad>España</nacionalidad>
+      <edad>24</edad>
+    </jugador>
+  </plantilla>
+</granadaCF>

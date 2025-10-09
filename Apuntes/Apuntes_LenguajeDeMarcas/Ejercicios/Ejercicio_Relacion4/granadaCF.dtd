@@ -1,0 +1,12 @@
+<!ELEMENT granadaCF (club,plantilla)>
+<!ELEMENT club (nombre,fundacion,estadio,capacidad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fundacion (#PCDATA)>
+<!ELEMENT estadio (#PCDATA)>
+<!ELEMENT capacidad (#PCDATA)>
+<!ELEMENT plantilla (jugador+)>
+<!ELEMENT jugador (nombre,dorsal,posicion,nacionalidad,edad)>
+<!ELEMENT dorsal (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
