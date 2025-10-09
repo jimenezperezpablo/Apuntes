@@ -1,9 +1,36 @@
 <script>
+    let notaUsu = Number(prompt("Introduce la calificacion del alumno 1"))
+    let total = notaUsu
+    let numeroRep = 0
+    let numeroSus = 0
+    let numeroApr = 0
 
 
+    for (let i = 0; notaUsu != -1; i++) {
+
+        console.log("Introduce la calificacion del alumno " + (i + 1) + ": " + notaUsu);
+
+        if (notaUsu >= 5) {
+            numeroApr++
+
+        } else {
+            numeroSus++
+
+        }
 
 
+        notaUsu = Number(prompt("Introduce la calificacion del alumno " + (i + 2)))
+        total = total + notaUsu
+        numeroRep = i + 1
 
 
-    
+    }
+
+    total++
+
+    console.log("El numero de Aprobados es: " + numeroApr + " y el de suspensos " + numeroSus)
+
+
+    console.log("La calificación media es: " + (total / numeroRep))
+
 </script>
