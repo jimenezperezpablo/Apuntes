@@ -1,0 +1,1 @@
+cp /bin/?a*{o,e} examen/ejercicios1

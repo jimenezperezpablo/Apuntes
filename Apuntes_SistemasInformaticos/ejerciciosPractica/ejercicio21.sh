@@ -1,0 +1,1 @@
+mkdir examen/ejercicios1 examen/ejercicios2
