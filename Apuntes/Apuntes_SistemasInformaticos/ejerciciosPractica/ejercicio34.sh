@@ -1,0 +1,1 @@
+mkdir -p PRUEBA/dir3 PRUEBA/dir2
