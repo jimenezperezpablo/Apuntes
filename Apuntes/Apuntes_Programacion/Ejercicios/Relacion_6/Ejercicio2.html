@@ -1,19 +1,28 @@
 <script>
     let saldo = 1000
-    let retiro = Number(prompt("Saldo: "+saldo+" | Introduzca saldo a retirar:"))
-    let resto = saldo - retiro
+    let retiro = Number(prompt("Saldo: " + saldo + " | Introduzca saldo a retirar:"))
 
-   
+
+    while (saldo > 0) {
+        if (retiro > saldo) {
+            console.log("Saldo insuficiente.");
+        } else {
+            console.log("Saldo: " + saldo + " | Introduzca saldo a retirar: "+retiro)
+            saldo = saldo-retiro;
+            
+            
+        }
+
+        if (saldo == 0) {
+            console.log("Te has quedado sin saldo ¡A trabajar!")
+            
+        }else{
+            retiro = Number(prompt("Saldo: " + saldo + " | Introduzca saldo a retirar:"));
+
+        }
 
         
+    }
 
-    
-        
-
-
-    
-
-
-    
 
 </script>
