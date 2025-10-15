@@ -2,8 +2,22 @@
     let combustibleInicial = Number(prompt("Introduce el combustible inicial:"))
     let precioCombustible = Number(prompt("Precio del litro de combustible:"))
     let consumoKm = Number(prompt("Consumo cada 100km:"))
+    let kmViaje = 0
+    let contadorViajes = 0
+    let precioViaje = 0
+    consumoKm = consumoKm / 100
 
-
-    
-
+    while (combustibleInicial != 0) {
+        contadorViajes++
+        kmViaje = Number(prompt("Introduce los kilómetros del viaje " + contadorViajes + ":"))
+        precioViaje = (kmViaje * consumoKm) * precioCombustible
+        combustibleInicial = combustibleInicial - (kmViaje * consumoKm)
+        if ((kmViaje * consumoKm) > combustibleInicial) {
+            combustibleInicial = 0
+            console.log("¡Combustible insuficiente!")
+        } else {
+            console.log("Precio del viaje: " + precioViaje)
+            console.log("Combustible restante: " + combustibleInicial + " litros")
+        }
+    }
 </script>
