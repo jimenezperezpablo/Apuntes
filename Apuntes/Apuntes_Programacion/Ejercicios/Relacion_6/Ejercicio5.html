@@ -1,0 +1,20 @@
+<script>
+
+    let temperaturaDia = Number(prompt("Introduce la temperatura del día 1:"))
+    let totalTemperatua = 0
+    let diaSemana = 7
+    let promedio = 0
+
+
+    for (let i = 0; i != (diaSemana - 1); i++) {
+
+
+        totalTemperatua = totalTemperatua + temperaturaDia
+        temperaturaDia = Number(prompt("Introduce la temperatura del día " + (i + 2) + ":"))
+
+
+    }
+    promedio = totalTemperatua / diaSemana
+    console.log("La temperatura media de la semana es: " + promedio)
+
+</script>
