@@ -91,8 +91,60 @@ mv /ruta/directorio /nueva/ruta/
 
 ```
 
-## RM ##
+## TOUCH ##
+
+El primer parámetro es la ruta del archivo que queremos crear.Si solamente escribimos un nombre, lo creará en la carpeta donde ejecutemos el comando
 
 ```bash
-
+touch archivo.txt
 ```
+
+## CAT ##
+
+Abre el archivo que pasemos como primer parámetro y muestra su contenido en la terminal
+
+```bash
+cat archivo.txt
+```
+
+## GREP ##
+
+Busca una cadena de caracteres dentro de un texto. Hay dos formas de usarlo, tomando el texto como salida de otro comando usando | o abriendo el archivo pasado como segundo parámetro
+
+```bash
+ls carpeta1 | grep hola
+```
+
+## NANO ##
+
+Abre el editor de texto Nano en la terminal.El primer parámetro es la ruta del archivo que queremos abrir.Si no existe, lo crea
+
+```bash
+nano archivo.txt
+```
+
+## WC ##
+
+Cuenta las líneas, palabras y caracteres del archivo pasado como parámetro. También se puede usar redirigiendo la salida de otro comando a la entrada de wc
+
+```bash
+# -l     líneas
+# -w   palabras
+# -c caracteres
+
+wc archivo.txt
+
+ls -l | wc -l
+```
+
+## PWD ##
+
+Devuelve la ruta en la que nos encontramos en la terminal. No tiene parámetros.
+
+```bash
+pwd
+```
+
+## FIND ##
+
+Busca los archivos que cumplan con los filtros pasados como opciones dentro de la carpeta pasada como primer parámetro. Si no se le pasa carpeta, es la actual
