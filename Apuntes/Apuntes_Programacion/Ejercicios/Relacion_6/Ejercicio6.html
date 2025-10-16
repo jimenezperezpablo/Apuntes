@@ -1,43 +1,36 @@
 <script>
-    let numeroUno = Number(prompt("Introduce el primer número:"))
-    let numeroDos = Number(prompt("Introduce el segundo número:"))
+    let numeroUno = prompt("Introduce el primer número:")
+    let numeroDos = prompt("Introduce el segundo número:")
     let operacion = prompt("Introduce la operación:")
     let solucion = 0
 
     while (numeroUno != "SALIR") {
 
         
-
-        
-
-        if (numeroUno = Number) {
+        if (numeroUno == Number) {
 
             if (operacion = "+") {
                 solucion = numeroUno + numeroDos
+                console.log(solucion);
             }
             else if (operacion = "-") {
                 solucion = numeroUno - numeroDos
+                console.log(solucion);
             }
             else if (operacion = "*") {
                 solucion = numeroUno * numeroDos
+                console.log(solucion);
+            }
+
+            else if (operacion = "/") {
+                solucion = numeroUno / numeroDos
+                console.log(solucion);
             }
             else {
-                solucion = numeroUno / numeroDos
+                console.log("Operador no valido");
+
             }
-        }
-        
-
-
-
-
-
-
-
-
-
-
-
-
+        }           
 
     }
 
