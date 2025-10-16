@@ -148,3 +148,7 @@ pwd
 ## FIND ##
 
 Busca los archivos que cumplan con los filtros pasados como opciones dentro de la carpeta pasada como primer parámetro. Si no se le pasa carpeta, es la actual
+
+```bash
+find ~/Desktop/CarpetaMadre/Pablo1 -type f 
+```
