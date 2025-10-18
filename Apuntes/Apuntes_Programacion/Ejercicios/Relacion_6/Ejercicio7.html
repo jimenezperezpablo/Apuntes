@@ -1,0 +1,51 @@
+<script>
+    let numeroTotal = ""
+    let numeroDigito = ""
+    let solucion = ""
+    let contador = 0
+
+    while (numeroTotal != "SALIR" && numeroDigito != "SALIR") {
+
+        numeroTotal = prompt("Introduce el número:")
+
+        if (numeroTotal != "SALIR") {
+            numeroTotal = Number(numeroTotal)
+
+            numeroDigito = prompt("Introduce el dígito:")
+            if (numeroDigito != "SALIR")
+                numeroDigito = Number(numeroDigito)
+
+            if (numeroDigito != "SALIR" && numeroTotal != "SALIR") {
+                if (numeroTotal < 0) {
+                    console.log("¡Número incorrecto!")
+
+                }
+                else if (numeroDigito > 9) {
+                    console.log("¡Dígito incorrecto!");
+
+                }
+                else if (numeroTotal > 0 && numeroDigito < 10 && numeroDigito >= 0) {
+
+                    numeroDigito = String(numeroDigito)
+                    numeroTotal = String(numeroTotal)
+                    for (i = 0; i < numeroTotal.length; i++) {
+                        if (numeroTotal[i] == numeroDigito) {
+                            contador++
+                        }
+                    }
+
+                    solucion = "El digito " + numeroDigito + " aparece " + contador + " veces en el numero " + numeroTotal
+                    console.log(solucion)
+
+                }
+
+
+            }
+        }
+
+
+
+
+    }
+
+</script>

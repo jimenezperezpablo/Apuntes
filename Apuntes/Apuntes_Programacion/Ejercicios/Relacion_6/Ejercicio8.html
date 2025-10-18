@@ -1,0 +1,55 @@
+<script>
+    let hobbit1Edad = Number(prompt("Introduce la Edad del primer hobbit"))
+    let hobbit1Nombre = prompt("introduce el nombre del primer hobbit")
+    let puedeRepetir1 = false
+
+    let hobbit2Edad = Number(prompt("Introduce la Edad del segundo hobbit"))
+    let hobbit2Nombre = prompt("introduce el nombre del segundo hobbit")
+    let puedeRepetir2 = false
+
+    let hobbit3Edad = Number(prompt("Introduce la Edad del tercer hobbit"))
+    let hobbit3Nombre = prompt("introduce el nombre del tercer hobbit")
+    let puedeRepetir3 = false
+
+    let totaledad = hobbit1Edad + hobbit2Edad + hobbit3Edad
+
+    if (hobbit1Edad <= 33 || totaledad % 2 == 0) {
+        puedeRepetir1 = true
+    }
+    if (hobbit2Edad <= 33 || totaledad % 3 == 0) {
+        puedeRepetir2 = true
+    }
+    if (hobbit3Edad <= 33 || totaledad % 5 == 0) {
+        puedeRepetir3 = true
+    }
+
+
+    if (puedeRepetir1 == true) {
+        console.log("El 1 si");
+
+    }else {
+        console.log("El 1 no");
+    }
+
+    if (puedeRepetir2 == true) {
+        console.log("El 2 si");
+        
+    }else {
+        console.log("El 2 no");
+    }
+
+    if (puedeRepetir3 == true) {
+        console.log("El 3 si");
+        
+
+    }else {
+        console.log("El 3 no");
+    }
+
+
+    
+
+
+
+
+</script>

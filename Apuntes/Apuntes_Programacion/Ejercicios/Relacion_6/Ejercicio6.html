@@ -1,36 +1,44 @@
 <script>
-    let numeroUno = prompt("Introduce el primer número:")
-    let numeroDos = prompt("Introduce el segundo número:")
-    let operacion = prompt("Introduce la operación:")
+    let numeroUno = ""
+    let numeroDos = ""
+    let operacion = ""
     let solucion = 0
 
-    while (numeroUno != "SALIR") {
+    while (numeroUno != "SALIR" && numeroDos != "SALIR" && operacion != "SALIR") {
 
-        
-        if (numeroUno == Number) {
+        numeroUno = prompt("Introduce el primer número:")
+        numeroDos = prompt("Introduce el segundo número:")
+        operacion = prompt("Introduce la operación:")
 
-            if (operacion = "+") {
+        if (numeroUno != "SALIR" && numeroDos != "SALIR" && operacion != "SALIR") {
+
+            numeroUno = Number(numeroUno)
+            numeroDos = Number(numeroDos)
+
+            if (operacion == "+") {
                 solucion = numeroUno + numeroDos
-                console.log(solucion);
+                console.log("El resultado de "+numeroUno+operacion+numeroDos+" es "+solucion);
             }
-            else if (operacion = "-") {
+            else if (operacion == "-") {
                 solucion = numeroUno - numeroDos
-                console.log(solucion);
+                console.log("El resultado de "+numeroUno+operacion+numeroDos+" es "+solucion);
             }
-            else if (operacion = "*") {
+            else if (operacion == "*") {
                 solucion = numeroUno * numeroDos
-                console.log(solucion);
+                console.log("El resultado de "+numeroUno+operacion+numeroDos+" es "+solucion);
             }
 
-            else if (operacion = "/") {
+            else if (operacion == "/") {
                 solucion = numeroUno / numeroDos
-                console.log(solucion);
+                console.log("El resultado de "+numeroUno+operacion+numeroDos+" es "+solucion);
             }
             else {
                 console.log("Operador no valido");
 
             }
-        }           
+
+        }
+
 
     }
 
