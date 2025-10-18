@@ -148,3 +148,10 @@ pwd
 ## FIND ##
 
 Busca los archivos que cumplan con los filtros pasados como opciones dentro de la carpeta pasada como primer parámetro. Si no se le pasa carpeta, es la actual
+
+```bash
+find ~/Desktop/CarpetaMadre/Pablo1 -type f 
+
+# Busca todos los archivos de tipo .log y busca dentro de ellos si hay la palabra error, luego lo guarda en un txt donde yo diga  
+find / -type f -name "*.log" | grep -i "error" > /home/ismail/Escritorio/erroreslog.txt
+```
