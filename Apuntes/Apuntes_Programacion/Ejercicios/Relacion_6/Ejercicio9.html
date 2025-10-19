@@ -1,0 +1,42 @@
+<script>
+
+    //Declaro variables
+    let numeroElectrodomesticos = Number(prompt("Introduce el número de electrodomésticos a registrar:"))
+    let precioPorHora = Number(prompt("Introduce el precio por kilovatio-hora (kWh):"))
+    let potenciaContratada = Number(prompt("Introduce la potencia total contratada (en vatios):"))
+    let potenciaElectrodomestico = 0
+    let horasDiarias = 0
+    let costeMensual = 0
+    let consumoDiario = 0
+    let consumoMensual = 0
+    let precioMensual = 0
+    let consumoTotal = 0
+
+    //Creo primer bucle
+
+    for (let i = 1; i <= numeroElectrodomesticos; i++) {
+
+        potenciaElectrodomestico = Number(prompt("Introduce la potencia del electrodoméstico " + i + " (en vatios):"))
+        // Manejo de errores con bucle
+        while (potenciaElectrodomestico >= potenciaContratada) {
+            alert("¡Alerta! Has superado la potencia de " + potenciaContratada + " W.")
+            potenciaElectrodomestico = Number(prompt("Introduce la potencia del electrodoméstico " + i + " (en vatios):"))
+
+        }
+
+        horasDiarias = Number(prompt("Introduce el número de horas de uso diario:"))
+
+        //Calculos necesarios
+        consumoDiario = (potenciaElectrodomestico / 1000) * horasDiarias
+        consumoMensual = consumoDiario * 30
+        consumoTotal = consumoTotal + consumoMensual
+        precioMensual = consumoTotal * precioPorHora
+
+    }
+
+    console.log("Consumo total mensual: " + consumoTotal.toFixed(2) + " kWh");
+    console.log("Coste total mensual: " + precioMensual.toFixed(2) + " €");
+
+
+
+</script>

@@ -12,6 +12,9 @@
         kmViaje = Number(prompt("Introduce los kilómetros del viaje " + contadorViajes + ":"))
         precioViaje = (kmViaje * consumoKm) * precioCombustible
         combustibleInicial = combustibleInicial - (kmViaje * consumoKm)
+
+
+        
         if ((kmViaje * consumoKm) > combustibleInicial) {
             combustibleInicial = 0
             console.log("¡Combustible insuficiente!")
