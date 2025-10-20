@@ -1,0 +1,42 @@
+<script>
+    let nombreCoche = prompt("Nombre del coche 1")
+    let tiempoBoxCocheActual = Number(prompt("Tiempo en boxes:"))
+    let contadorCoche = 1
+    let tiempoBoxCocheMejor = 0
+    let tiempoTotal = 0
+    let nombreGanador = ""
+
+    nombreGanador = nombreCoche
+    tiempoBoxCocheMejor += tiempoBoxCocheActual
+    tiempoTotal += tiempoBoxCocheActual
+
+    while(nombreCoche != "SALIR"){
+        contadorCoche++
+    
+        nombreCoche = prompt("Nombre del coche "+contadorCoche)
+        if(nombreCoche != "SALIR"){
+
+        tiempoBoxCocheActual = Number(prompt("Tiempo en boxes:"))
+        tiempoTotal += tiempoBoxCocheActual
+
+        if (tiempoBoxCocheActual >= tiempoBoxCocheMejor ){
+
+            tiempoBoxCocheMejor = tiempoBoxCocheMejor
+            
+        }else{
+
+            tiempoBoxCocheMejor = tiempoBoxCocheActual
+            nombreGanador = nombreCoche
+
+        }
+        }
+        
+    }
+
+    console.log("Total de coches: " + (contadorCoche - 1) );
+    console.log("Tiempo medio " +(tiempoTotal/(contadorCoche-1))+" segundos")
+    console.log("El coche más rápido fue "+nombreGanador +" con : " +tiempoBoxCocheMejor+ " segundos");
+    
+    
+
+</script>

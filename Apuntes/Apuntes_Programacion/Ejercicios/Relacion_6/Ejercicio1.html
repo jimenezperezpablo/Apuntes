@@ -8,23 +8,21 @@
 
     while (notaUsu != -1) {
 
-        while(notaUsu<0||notaUsu>10){
-             notaUsu = Number(prompt("Introduce la calificacion del alumno " + (numeroAlumnos + 1) + ": "))
+        while (notaUsu < 0 || notaUsu > 10) {
+            notaUsu = Number(prompt("Introduce la calificacion del alumno " + (numeroAlumnos + 1) + ": "))
 
         }
 
-
-
-
         numeroAlumnos++
         total += notaUsu
+
         if (notaUsu >= 5) {
             aprobadosAlu++
         } else {
             suspensosAlu++
         }
-         notaUsu = Number(prompt("Introduce la calificacion del alumno " + (numeroAlumnos + 1) + ": "))
-       
+        notaUsu = Number(prompt("Introduce la calificacion del alumno " + (numeroAlumnos + 1) + ": "))
+
     }
 
     promedio = total / numeroAlumnos
