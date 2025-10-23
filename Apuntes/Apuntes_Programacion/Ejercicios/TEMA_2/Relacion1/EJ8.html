@@ -1,10 +1,10 @@
 <script>
 
 let numeros = [100,200,300]
-let numero1 = numeros[2]
-let numero2 = numeros[0]
+let numero1 = numeros[0]
+numeros[0] = numeros[2]
+numeros[2] = numero1
 
-numeros = [numero1,200,numero2]
 console.log(numeros);
 
 

@@ -1,12 +1,18 @@
 <script>
 
-let cola = [10,20,30]
+let pila = []
+pila.push("10","20","30")
+console.log(pila);
 
-console.log(cola[2]);
-cola.pop()
-console.log(cola[1]);
-cola.pop()
-console.log(cola[0]);
+let clienteAtendido = cola.shift()
+console.log("hemos atendido a " +clienteAtendido)
+console.log("cliente restante: " +cola);
+clienteAtendido = cola.shift()
+console.log("hemos atendido a " +clienteAtendido)
+console.log("cliente restante: " +cola);
+clienteAtendido = cola.shift()
+console.log("hemos atendido a " +clienteAtendido)
+console.log("cliente restante: " +cola);
 
 
 </script>
