@@ -1,0 +1,18 @@
+<script>
+    let estacionamiento = []
+
+    let totalFilas = Number(prompt("Introduce el numero de filas"))
+    let totalColumnas = Number(prompt("Introduce el numero de columnas"))
+    let filaActual = []
+
+    for (let i = 0; i < totalFilas; i++) {
+        filaActual = []
+        for (let j = 0; j < totalColumnas; j++) {
+            filaActual.push("F: "+ i + " C: " + j)
+        }
+        estacionamiento.push(filaActual)
+    }
+    console.log(estacionamiento);
+
+
+</script>
