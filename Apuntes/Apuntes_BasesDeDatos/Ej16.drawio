@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="9gbMqu-VR9pyEoC8TWno" name="Page-1">
+        <mxGraphModel dx="543" dy="313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="486" value="Clientes:(ID,Nombre,direccion,telefono)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="300" width="870" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="487" value="Pistas:(ID,Cap Max,estado)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="330" width="870" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="488" value="Reservas:(fecha,hora,duracion,idPista,idCliente)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="360" width="870" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="489" value="Empleados:(ID,nombre,puesto,fecha,IDpista)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="390" width="870" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="490" value="Pagos:(ID,monto,fecha,metodo,idReserva)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="420" width="870" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="491" value="Promociones:(ID,nombre,descripcion,porcentaje)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="450" width="870" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="492" value="ME FALTA UNA TABLA" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="480" width="870" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
