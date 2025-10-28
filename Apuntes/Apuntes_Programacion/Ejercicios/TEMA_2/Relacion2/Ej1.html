@@ -1,15 +1,10 @@
 <script>
     let diaSemana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
     let temperaturaResgistrada = []
-
-
     let opcionMenu = 0
     let temperaturaMasAlta = 0
-
     let temperaturaMasBajo = 0
-
-
-
+    let temperaturaMedia = 0
 
     for (let i = 0; i < diaSemana.length; i++) {
         temperaturaResgistrada[i] = Number(prompt("Introduce la temperatura del dia " + diaSemana[i]))
@@ -35,16 +30,10 @@
                 }
             }
             console.log(temperaturaMasAlta);
-
-
-
-
-
-
-
-
         }
         else if (opcionMenu == 2) {
+
+        
 
 
 
@@ -52,10 +41,14 @@
         }
         else if (opcionMenu == 3) {
 
+            for (let i = 0; i < diaSemana.length; i++) {
 
+                temperaturaMedia += temperaturaResgistrada[i]
 
+            }
 
-
+            temperaturaMedia = temperaturaMedia / diaSemana.length
+            console.log("La temperatura media de la semana fue: " + temperaturaMedia + " grados")
 
         }
         else {
