@@ -1,0 +1,63 @@
+<script>
+
+    let productosAlmacen = []
+    let precioProductos = []
+    let opcionPrograma = ""
+    let productoUsuario = ""
+    let totalArticulos = []
+    let totalPrecios = []
+    let numerosProductos = 0
+    let contadorProductos = 0
+    let precioActual = 0
+
+    for (let i = 1; i <= 10; i++) {
+
+        productosAlmacen[i] = prompt("Introduce el producto numero " + i)
+
+        precioProductos[i] = Number(prompt("Introduce el precio del producto numero " + i))
+
+    }
+
+    opcionPrograma = prompt("Introduce lo que quieres hacer dentro del programan\nCOMPRAR\nFIN")
+
+    while (opcionPrograma != "FIN") {
+
+        productoUsuario = prompt("Introduce el nombre del producto que quieres comprar")
+        numerosProductos = prompt("Introduce el numero de elementos que quieres comprar")
+
+        for (let i = 1; i <= productosAlmacen.length; i++) {
+
+            if (productosAlmacen[i] == productoUsuario) {
+
+                console.log("Dentro de nuestro programa el producto " + productoUsuario + " esta en la posicion " + i);
+
+                console.log("El articulo " + productoUsuario + " tiene un valor de "+ precioProductos[i]);
+                
+                
+                
+                precioActual = (precioProductos[i]*numerosProductos)
+
+                totalPrecios += precioActual
+
+            }
+
+            
+        }
+
+        contadorProductos++
+
+        console.log("Producto Nº "+contadorProductos);
+        console.log("Precio Total "+totalPrecios);
+        
+        
+
+        opcionPrograma = prompt("Introduce lo que quieres hacer dentro del programan\nComprar\nFIN")
+
+
+
+
+    }
+
+
+
+</script>
