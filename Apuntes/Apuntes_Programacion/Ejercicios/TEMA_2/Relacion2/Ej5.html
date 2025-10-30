@@ -1,0 +1,38 @@
+<script>
+
+    let nombreAlumnos = []
+    let notaAlumnos = []
+
+    let opcionMenu = 0
+
+
+    opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
+
+    while (opcionMenu != 5) {
+
+
+        if (opcionMenu == 1) {
+
+            nombreAlumnos.push(prompt("Introduce el nombre del nuevo alumno"))
+            notaAlumnos.push(prompt("Introduce la nota de este alumno"))
+            opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
+
+        }
+
+        else if (opcionMenu == 2) {
+
+            if(nombreAlumnos.length<0){
+                opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
+            }
+
+        }
+        else if (opcionMenu == 3) {
+
+        }
+        else if (opcionMenu == 4) {
+
+        }
+    }
+
+
+</script>

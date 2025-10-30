@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="9gbMqu-VR9pyEoC8TWno" name="Page-1">
+        <mxGraphModel dx="885" dy="411" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="492" value="Ciclista(DNI,nombre,nacionalidad,F.Nacimiento)&lt;div&gt;Ciclista_Equipo(DNI_cliclista,Nombre_Equipo,F.Inicio,F.Fin)&lt;/div&gt;&lt;div&gt;Equipo(Nombre,Nacionalidad,Director)&lt;/div&gt;&lt;div&gt;Equipo_Prueba(Nombre_Equipo,Nombre_Prueba,Año_prueba,Puesto)&lt;/div&gt;&lt;div&gt;Prueba(Nombre,Año,Etapas,KM Totales,DNI_CiclistaGanador)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="305" width="710" height="240" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
