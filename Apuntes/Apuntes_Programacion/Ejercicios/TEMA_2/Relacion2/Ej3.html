@@ -5,10 +5,12 @@
     let opcionPrograma = ""
     let productoUsuario = ""
     let totalArticulos = []
-    let totalPrecios = []
+    let totalPrecios = 0
     let numerosProductos = 0
     let contadorProductos = 0
     let precioActual = 0
+
+    // Reuno los elementos
 
     for (let i = 1; i <= 10; i++) {
 
@@ -18,12 +20,20 @@
 
     }
 
+    // Pregunto que quiere que haga el programa 
+
     opcionPrograma = prompt("Introduce lo que quieres hacer dentro del programan\nCOMPRAR\nFIN")
 
     while (opcionPrograma != "FIN") {
 
+
+        // Pido el producto y el numero de objetos que quiere
+
         productoUsuario = prompt("Introduce el nombre del producto que quieres comprar")
-        numerosProductos = prompt("Introduce el numero de elementos que quieres comprar")
+        numerosProductos = Number(prompt("Introduce el numero de elementos que quieres comprar"))
+
+
+        // Compruebo donde esta el elemento en el array
 
         for (let i = 1; i <= productosAlmacen.length; i++) {
 
@@ -34,8 +44,13 @@
                 console.log("El articulo " + productoUsuario + " tiene un valor de "+ precioProductos[i]);
                 
                 
+                // hago calculos para el precio
+
+                precioActual = (precioProductos[i] * numerosProductos)
+
+
+                console.log("Este pedido tiene un precio de " + precioActual);
                 
-                precioActual = (precioProductos[i]*numerosProductos)
 
                 totalPrecios += precioActual
 
