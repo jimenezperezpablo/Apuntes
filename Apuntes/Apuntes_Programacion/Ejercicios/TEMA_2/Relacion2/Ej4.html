@@ -1,5 +1,84 @@
 <script>
 
-   
+    let tituloLibro = []
+    let cantidadesLibro = []
+
+    let opcionMenu = 0
+    let libroModificar = ""
+
+
+    opcionMenu = Number(prompt("1. Añadir un nuevo libro al inventario (con su título y cantidad).\n2. Actualizar la cantidad de un libro existente.\n3. Ver el inventario completo (título y cantidad de cada libro).\n4. Salir del programa."))
+
+    while (opcionMenu > 0 && opcionMenu < 5) {
+
+
+
+
+        if (opcionMenu == 1) {
+
+            tituloLibro.push(prompt("Introduce el nuevo libro"))
+            cantidadesLibro.push(Number(prompt("Introduce la cantidad del nuevo libro")))
+            opcionMenu = Number(prompt("1. Añadir un nuevo libro al inventario (con su título y cantidad).\n2. Actualizar la cantidad de un libro existente.\n3. Ver el inventario completo (título y cantidad de cada libro).\n4. Salir del programa."))
+        }
+
+        else if (opcionMenu == 2) {
+
+            if (tituloLibro.length < 1) {
+                alert("No tienes libros actualmente")
+                opcionMenu = Number(prompt("1. Añadir un nuevo libro al inventario (con su título y cantidad).\n2. Actualizar la cantidad de un libro existente.\n3. Ver el inventario completo (título y cantidad de cada libro).\n4. Salir del programa."))
+
+            } else {
+
+                libroModificar = prompt("Introduce el nombre del libro que quieres modificar")
+
+                for (let i = 0; i < tituloLibro.length; i++) {
+
+                    if (libroModificar == tituloLibro[i]) {
+
+                        console.log("El libro " + libroModificar + " tiene " + cantidadesLibro[i] + " de stock");
+
+                        console.log(cantidadesLibro[i])
+
+                        cantidadesLibro[i] = Number(prompt("Introduce el nuevo stock"));
+
+                        console.log("El libro " + libroModificar + " ahora tiene " + cantidadesLibro[i] + " de stock")
+
+                    }
+
+
+                }
+                opcionMenu = Number(prompt("1. Añadir un nuevo libro al inventario (con su título y cantidad).\n2. Actualizar la cantidad de un libro existente.\n3. Ver el inventario completo (título y cantidad de cada libro).\n4. Salir del programa."))
+
+
+            }
+
+
+
+        }
+
+
+
+        else if (opcionMenu == 3) {
+
+            for (let i = 0; i < tituloLibro.length; i++) {
+                console.log("El inventario actualmente del libro " + tituloLibro[i] + " son " + cantidadesLibro[i] + " ejemplares");
+
+
+
+            }
+
+
+            opcionMenu = Number(prompt("1. Añadir un nuevo libro al inventario (con su título y cantidad).\n2. Actualizar la cantidad de un libro existente.\n3. Ver el inventario completo (título y cantidad de cada libro).\n4. Salir del programa."))
+
+        }
+
+
+
+
+    }
+
+
+
+
 
 </script>
