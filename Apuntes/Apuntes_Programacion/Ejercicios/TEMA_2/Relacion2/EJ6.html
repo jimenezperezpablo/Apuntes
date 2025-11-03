@@ -1,0 +1,82 @@
+<script>
+
+    let tareasDia = []
+    let estadoTarea = []
+    let opcionMenu = 0
+    let tareaCompletada = ""
+
+    opcionMenu = Number(prompt("1.Añadir una nueva tarea.\n2.Marcar una tarea como completada.\n3.Ver la lista de tareas pendientes.\n4.Ver la lista de tareas completadas.\n5.Salir del programa."))
+
+    while (opcionMenu != 5) {
+
+        if (opcionMenu == 1) {
+            tareasDia.push(prompt("Introduce el nombre de la nueva tarea que quieres añadir"))
+
+
+
+            opcionMenu = Number(prompt("1.Añadir una nueva tarea.\n2.Marcar una tarea como completada.\n3.Ver la lista de tareas pendientes.\n4.Ver la lista de tareas completadas.\n5.Salir del programa."))
+
+
+        } else if (opcionMenu == 2) {
+
+            tareaCompletada = prompt("Introduce el nombre de la tarea que quieres cambiar el estado")
+
+            for (let i = 0; i < tareasDia.length; i++) {
+                if (tareaCompletada == tareasDia[i]) {
+
+                    if (estadoTarea[i] == true) {
+
+                        estadoTarea = false
+
+                    } else {
+
+                        estadoTarea = true
+                    }
+                }
+
+            }
+            opcionMenu = Number(prompt("1.Añadir una nueva tarea.\n2.Marcar una tarea como completada.\n3.Ver la lista de tareas pendientes.\n4.Ver la lista de tareas completadas.\n5.Salir del programa."))
+
+
+
+        } else if (opcionMenu == 3) {
+
+            for (let i = 0; i < tareasDia.length; i++) {
+
+                if (estadoTarea[i] = false)
+
+                    console.log(estadoTarea[i]);
+
+
+
+            }
+             opcionMenu = Number(prompt("1.Añadir una nueva tarea.\n2.Marcar una tarea como completada.\n3.Ver la lista de tareas pendientes.\n4.Ver la lista de tareas completadas.\n5.Salir del programa."))
+
+
+
+        } else if (opcionMenu == 4) {
+
+            for (let i = 0; i < tareasDia.length; i++) {
+
+                if (estadoTarea[i] = true)
+
+                    console.log(estadoTarea[i]);
+
+
+
+            }
+             opcionMenu = Number(prompt("1.Añadir una nueva tarea.\n2.Marcar una tarea como completada.\n3.Ver la lista de tareas pendientes.\n4.Ver la lista de tareas completadas.\n5.Salir del programa."))
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+</script>

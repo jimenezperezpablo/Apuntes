@@ -4,6 +4,11 @@
     let notaAlumnos = []
 
     let opcionMenu = 0
+    let totalPromedio = 0
+    let notaAlumnoAlta = 0
+    let notaAlumnoBaja = 0
+    let nombreAlumnoAlta = ""
+    let nombreAlumnoBaja = ""
 
 
     opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
@@ -14,22 +19,66 @@
         if (opcionMenu == 1) {
 
             nombreAlumnos.push(prompt("Introduce el nombre del nuevo alumno"))
-            notaAlumnos.push(prompt("Introduce la nota de este alumno"))
+            notaAlumnos.push(Number(prompt("Introduce la nota de este alumno")))
             opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
 
         }
 
         else if (opcionMenu == 2) {
 
-            if(nombreAlumnos.length<0){
+            if (nombreAlumnos.length < 0) {
                 opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
+            } else {
+                for (let i = 0; i < notaAlumnos.length; i++) {
+                    totalPromedio += notaAlumnos[i]
+                }
+                console.log("El total del promedio de notas de " + notaAlumnos.length + " alumno/s es " + totalPromedio / notaAlumnos.length);
+                opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
+
             }
 
         }
         else if (opcionMenu == 3) {
 
+
+
+            for (let i = 0; i < notaAlumnos.length; i++) {
+
+                if (notaAlumnos[i] >= notaAlumnoAlta) {
+                    notaAlumnoAlta = notaAlumnos[i]
+                    nombreAlumnoAlta = nombreAlumnos[i]
+
+                }
+
+
+
+            }
+
+            console.log("la nota mas alta es " + notaAlumnoAlta + " y pertenece al alumno " + nombreAlumnoAlta);
+            opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
+
         }
         else if (opcionMenu == 4) {
+
+            notaAlumnoBaja = 1000
+
+
+            for (let i = 0; i < notaAlumnos.length; i++) {
+
+                if (notaAlumnos[i] < notaAlumnoBaja) {
+                    notaAlumnoBaja = notaAlumnos[i]
+                    nombreAlumnoBaja = nombreAlumnos[i]
+
+                }
+
+
+
+            }
+
+            console.log("la nota mas baja es " + notaAlumnoBaja + " y pertenece al alumno " + nombreAlumnoBaja);
+            opcionMenu = prompt("1. Añadir un estudiante y su calificación.\n2. Mostrar la calificación promedio de la clase.\n3. Mostrar la calificación más alta y el nombre del estudiante correspondiente.\n4. Mostrar la calificación más baja y el nombre del estudiante correspondiente.\n5. Salir del programa.")
+
+
 
         }
     }

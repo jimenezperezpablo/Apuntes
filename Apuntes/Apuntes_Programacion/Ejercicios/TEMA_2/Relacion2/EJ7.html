@@ -1,0 +1,40 @@
+<script>
+
+
+let nombreGastos = []
+
+let precioGastos = []
+
+
+let opcionMenu = 0
+
+while(opcionMenu != 5){
+
+    if(opcionMenu == 1){
+
+        nombreGastos.push(prompt("Introduce el nombre del gasto"))
+        precioGastos.push(Number(prompt("Introduce el precio del nuevo gasto")))
+
+    }else if(opcionMenu == 2){
+
+        for (let i = 0; i < precioGastos.length; i++) {
+
+            console.log("El gasto "+nombreGastos[i]+" tuvo un precio de "+ precioGastos[i]);
+            
+        }
+        
+
+    }else if(opcionMenu == 3){
+        
+
+    }else if(opcionMenu == 4){
+
+    }
+
+}
+
+
+
+
+
+</script>
