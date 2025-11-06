@@ -1,0 +1,16 @@
+<script>
+
+    function factorial(numero) {
+
+        let resultado = 1;
+        for (let i = 1; i <= numero; i++) {
+            resultado *= i;
+        }
+        return resultado;
+    }
+
+    let numeroUsuario = Number(prompt("introduce el numero que deseas factorizar"))
+    console.log(factorial(numeroUsuario));
+    
+
+</script>

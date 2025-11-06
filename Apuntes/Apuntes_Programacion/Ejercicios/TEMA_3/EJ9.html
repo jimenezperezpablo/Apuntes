@@ -1,0 +1,24 @@
+<script>
+
+function mayor(Numero1,Numero2,Numero3){
+    let resultado = 0
+   if(Numero1 < Numero2 && Numero1 < Numero3){
+    resultado = Numero1
+   }else if(Numero2 < Numero1 && Numero2 < Numero3){
+    resultado = Numero2
+   }
+   else{
+    resultado = Numero3
+   }
+    
+    return resultado
+}
+
+let Numero1 = Number(prompt("Introduce el primer numero a comprobar"))
+let Numero2 = Number(prompt("Introduce el segundo numero a comprobar"))
+let Numero3 = Number(prompt("Introduce el tercer numero a comprobar"))
+
+console.log(mayor(Numero1,Numero2,Numero3));
+
+
+</script>
