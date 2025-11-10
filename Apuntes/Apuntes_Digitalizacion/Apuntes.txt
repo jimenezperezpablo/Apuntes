@@ -1,0 +1,51 @@
+Tecnologias habilitadoras y digitales son todas las herramientas y los recursos tecnlogicos que impulsan la innovacion y el desarrollo digital, resultan esenciales pasara la transformacion digital de todos los sectores productivos y son protagonitas de la industria 4.0
+
+
+IA: Son algoritmos y tecnicas que permiten a las maquinas aprender y razonar y tomar decisiones
+Big Data y Analisis de datos: Capacdad de recopilar, almacenar y anilazar grandes volumenes de datos
+IOT: Conexion de dispositivos y objetcos fisicos a internet que permite la recopilacion de datos en tiempo real y la automatizacion de procesos 
+Robotica: Robots y Automatizacion robotica de procesos que desempeñan un papel importante en la automatizacion de tareas y procesos 
+
+realidad virtual y aumentada, la aumentada enriquece el entorno real con elementos digitales minetras que la realidad vitual crea un entorno simulado
+
+Blockchain: Proporciona un registro descentralizado y seguro de transaciiones 
+BioMetria: Emplea Huellas dactilares, reconocimiento facial y voz para la seguridad 
+5G : Proporciona una concectividad mas rapida y confiable 
+Impresion 3d: Fabricacion de objetos tridimensionales
+Computacion en la Nube: Proporciona procesamiento y almacenamiento de datos atraves de la Nube
+Ciberseguridad: Tecnologias y beuenas practicas que protegen a equipos de amenazas ciberneticas 
+
+Caracteristicas de las THD
+
+Versatilidad
+Automatizacion
+Interconexion
+Analitica Avanzada 
+Seguridad 
+Escalabilidad 
+Personalizacion
+Ahorro 
+Innovacion
+
+
+Impacto THD en empresas 
+
+Tecnologias de la informacion relacionadas con el almacenamiento, la proteccion, el procesamiento y la trnasmision de datos y la transformacion digital 
+
+Tecnologias de la operacion Relacionadas con el efecto y la monitorizacion y con el control de la produccion y la cadena de suministros en entornos industriales
+
+Impacto de las THD en el medio Ambiente 
+
+Positivo: Disminucion del uso del papel gracias a la gestion electronica
+Mayor eficiencia energetica por la automatizacion de los sistemas de climatizacion
+Reduccion de desplazamiento por la expansion de teletrabajo 
+Monitoreo mas efectivo del medio ambiente gracias a sensores gracias a sensores, drones y herramientas digitales
+
+
+Negativos:
+
+Generacion de residuos electronicos por el rapido ciclo de obsolescencia de los dispositivos electronicos 
+Huella de carbono de dispositivos electronicos debido a la causa de su fabricacion distribucion y uso 
+Incremento en el consumo energetico por la creciente demanda de servicios digitales agotamiento de recursos naturales debido al uso de materiales necesario 
+
+Impacto en la infraestructura digital con la construccion de centros de datos y redes de comunicacion

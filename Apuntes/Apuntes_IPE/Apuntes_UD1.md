@@ -115,4 +115,34 @@
     - Efectos cancerigenos
     - Efectos mutagenos
 
-    
+
+
+
+
+### Tema 3
+##### Plan de emergencia 
+El plan de emergencia es un dom¡cumento q contuiene las respuestas de las medidas de proteccion que hay q adoptar en funcion de la empresa 
+
+clasificacion de las emergencias
+
+
+Conato de emergencia
+Emergencia Parcial
+Emergencia General
+
+
+
+preervar la vida
+no agravar 
+garantizar
+informar 
+
+
+
+Oberservar si esta consciente
+Abrir las vias respiratorias
+Ver oir y sentir
+RCP
+
+
+
