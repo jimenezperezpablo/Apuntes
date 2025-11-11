@@ -1,0 +1,18 @@
+<script>
+
+    function capitalizacionPrimeraLetra(palabra) {
+        let palabraCapi = ""
+        for (let i = 0; i < palabra.length; i++) {
+            if (i == 0) {
+                palabraCapi += palabra[i].toUpperCase()
+            } else {
+                palabraCapi += palabra[i]
+            }
+
+        }
+        return palabraCapi
+    }
+
+
+    alert(capitalizacionPrimeraLetra("pablo"))
+</script>

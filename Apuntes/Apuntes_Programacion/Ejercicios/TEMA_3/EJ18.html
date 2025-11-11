@@ -1,0 +1,26 @@
+<script>
+    function contarVocalesEnCadena(cadena) {
+
+        cadena = cadena.toUpperCase()
+
+        let cantidadVocales = 0
+
+        for (let i = 0; i < cadena.length; i++) {
+            if (cadena[i] == "A" || cadena[i] == "E" || cadena[i] == "I" || cadena[i] == "O" || cadena[i] == "U") {
+                cantidadVocales++
+            }
+
+
+        }
+
+        return cantidadVocales
+    }
+
+
+
+    let cadena = "Murcielago"
+
+    let numeroVocalees = contarVocalesEnCadena(cadena)
+
+    alert(numeroVocalees)
+</script>
