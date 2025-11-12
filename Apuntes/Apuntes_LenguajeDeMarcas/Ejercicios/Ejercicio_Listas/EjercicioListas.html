@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica: Listas en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        ul ul {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Práctica: Listas en HTML</h1>
+    <p>En esta actividad, practicarás la creación de listas ordenadas, no ordenadas y anidadas utilizando HTML. Completa
+        las tareas indicadas en los comentarios del código y utiliza las etiquetas <code>&lt;ol&gt;</code>,
+        <code>&lt;ul&gt;</code>, y <code>&lt;li&gt;</code> para resolverlas.
+    </p>
+
+    <h2>Instrucciones</h2>
+    <ol>
+        <li>Crea una lista ordenada con tus tres películas favoritas.</li>
+        <li>Crea una lista no ordenada con tres hobbies que disfrutes.</li>
+        <li>Crea una lista anidada dentro de una lista ordenada:
+            <ul>
+                <li>El primer nivel debe enumerar dos tipos de comida (ejemplo: italiana, japonesa).</li>
+                <li>Cada tipo de comida debe incluir al menos dos platos típicos como subelementos.</li>
+            </ul>
+        </li>
+        <li>Utiliza atributos como <code>type</code> y <code>start</code> en al menos una de las listas ordenadas.</li>
+        <li>Utiliza diferentes estilos de viñeta en las listas no ordenadas aplicando CSS
+            (<code>list-style-type</code>).</li>
+    </ol>
+
+    <h2>Respuestas</h2>
+
+    
+
+    <ol start="2">
+        <li>Interestelar</li>
+        <li>El club de la lucha</li>
+        <li>El gran hotel budapest</li>
+    </ol>
+    
+
+    <ul style="list-style-type: disc;">
+        <li >Hacer 3d</li>
+        <li >Escuchar musica</li>
+        <li >Salir a la calle</li>
+    </ul>
+
+  
+
+    <ol type="I">
+        <li>japonesa
+            <ul style="list-style-type: square;">
+                <li>Sushi</li>
+                <li>Ramen</li>
+            </ul>
+        </li>
+        <li>Italiana
+            <ul style="list-style-type: circle;">
+                <li>Macarrones con tomate</li>
+                <li>Pizza</li>
+            </ul>
+        </li>
+
+    </ol>
+
+
+
+</body>
+
+</html>
