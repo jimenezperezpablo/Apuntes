@@ -1,0 +1,21 @@
+<script>
+
+    function lanzarDado() {
+
+        let numeroDado = Math.floor(Math.random() * 6) + 1
+        return numeroDado
+
+    }
+
+    function lanzarDados(){
+        let dado1 = lanzarDado()
+        let dado2 = lanzarDado()
+        let suma = dado1 + dado2
+
+        return suma
+    }
+
+
+
+    alert(lanzarDados())
+</script>
