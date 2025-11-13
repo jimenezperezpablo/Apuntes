@@ -1,0 +1,34 @@
+<script>
+    function caraOCruz() {
+        let aleatorio = Math.floor(Math.random() * 2)
+        let resultado = ""
+        if (aleatorio == 1) {
+            resultado = "cara"
+        } else {
+            resultado = "cruz"
+        }
+        return resultado
+    }
+    function simularLanzamientoHastaTresCaras() {
+        let contador = 0
+        let intentos = 0
+        let resultadoActual
+        let resultado = []
+        let resultadoCaraoCruz = []
+        while (contador < 3) {
+            resultadoActual = caraOCruz()
+            intentos++
+            resultadoCaraoCruz.push(resultadoActual)
+            if (resultadoActual == "cara") {
+                contador++
+            } else {
+                contador = 0
+            }
+        }
+        resultado[0] = intentos
+        resultado[1] = resultadoCaraoCruz
+        return resultado
+    }
+    let simulacion = simularLanzamientoHastaTresCaras()
+    alert("Total de lanzamientos: " + simulacion[0]+"\nResultados: " + simulacion[1].join(" "))
+</script>

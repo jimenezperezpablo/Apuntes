@@ -1,0 +1,27 @@
+<script>
+
+    function juegoAdivinarNumero() {
+
+        let numeroAleatorio = Math.floor(Math.random() * 10) + 1
+
+        return numeroAleatorio
+
+
+
+    }
+
+
+
+    let numeroAveriguar = juegoAdivinarNumero()
+    let numeroUsuario = 0
+    let mensaje = ""
+    alert(numeroAveriguar)
+
+    if (numeroAveriguar > numeroUsuario) {
+        mensaje = "Numero es menor"
+    }else if(numeroAveriguar<numeroUsuario){
+        mensaje = "Numero es mayor"
+    }else{
+        mensaje = "has averiguado"
+    }
+</script>
