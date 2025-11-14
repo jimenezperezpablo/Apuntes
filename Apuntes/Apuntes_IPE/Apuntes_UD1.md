@@ -60,10 +60,7 @@
 - Calor: Deshidratacion y problemas respiratorios
 
 ###### 4. Prevencion
-
-- Limpieza y eliminacion de residuos
-- Utilizacion de sistemas de prevencion de inciendos
-- Establecimiento de planes de evacuacion y emergencias
+ 
 
 
  
