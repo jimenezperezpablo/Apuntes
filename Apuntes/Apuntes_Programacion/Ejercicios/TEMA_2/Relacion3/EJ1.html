@@ -1,0 +1,11 @@
+<script>
+    let arrayPalabras = ["apple", "banana", "kiwi", "watermelon"]
+    let palabraMasLarga = ""
+
+    for (let palabra of arrayPalabras) {
+        if (palabra.length > palabraMasLarga.length)
+            palabraMasLarga = palabra
+    }
+
+    alert(palabraMasLarga)
+</script>

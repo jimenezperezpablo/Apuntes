@@ -1,0 +1,96 @@
+<script>
+
+    let arrayPuntuaciones = [200, 350, 100, 200, 580, 700, 600, 470, 580, 700]
+    let opcionMenu = 0
+    let puntuaciónMasAlta = 0
+    let puntuaciónMasBaja = 100000000
+    let totalPuntuaciones = 0
+    let totalMedia = 0
+    let ejecutarPrograma = true
+
+
+    while (ejecutarPrograma == true) {
+
+
+        opcionMenu = Number(prompt(
+            "1. Mostrar la puntuación más alta.\n" +
+            "2. Mostrar la puntuación más baja.\n" +
+            "3. Calcular la puntuación total.\n" +
+            "4. Calcular la media.\n" +
+            "5. Salir."
+        ));
+
+        if (opcionMenu == 1) {
+
+            for (let i = 0; i < arrayPuntuaciones.length; i++) {
+                if (arrayPuntuaciones[i] > puntuaciónMasAlta) {
+                    puntuaciónMasAlta = arrayPuntuaciones[i]
+                }
+
+            }
+
+            alert("La puntuacion mas alta es: " + puntuaciónMasAlta)
+
+
+
+        }
+        else if (opcionMenu == 2) {
+
+            for (let i = 0; i < arrayPuntuaciones.length; i++) {
+                if (arrayPuntuaciones[i] < puntuaciónMasBaja) {
+                    puntuaciónMasBaja = arrayPuntuaciones[i]
+                }
+
+            }
+
+            alert("La puntuacion mas baja es: " + puntuaciónMasBaja)
+
+
+        }
+        else if (opcionMenu == 3) {
+            for (let i = 0; i < arrayPuntuaciones.length; i++) {
+                totalPuntuaciones += arrayPuntuaciones[i]
+
+            }
+
+            alert("La puntuacion total es: " + totalPuntuaciones)
+
+        }
+        else if (opcionMenu == 4) {
+
+            for (let i = 0; i < arrayPuntuaciones.length; i++) {
+                totalPuntuaciones += arrayPuntuaciones[i]
+
+            }
+
+            totalMedia = totalPuntuaciones / arrayPuntuaciones.length
+            alert("La puntuacion media es: " + totalMedia)
+
+
+        }
+        else if(opcionMenu == 5) {
+
+            ejecutarPrograma = false
+
+        }else{
+
+            opcionMenu = Number(prompt(
+            "1. Mostrar la puntuación más alta.\n" +
+            "2. Mostrar la puntuación más baja.\n" +
+            "3. Calcular la puntuación total.\n" +
+            "4. Calcular la media.\n" +
+            "5. Salir."
+        ));
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+</script>
