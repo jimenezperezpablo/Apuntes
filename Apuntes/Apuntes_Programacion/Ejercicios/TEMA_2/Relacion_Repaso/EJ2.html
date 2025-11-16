@@ -1,0 +1,57 @@
+<script>
+
+    let arrayJugadores = ["Jugador1", "Jugador2", "Jugador3", "Jugador4", "Jugador5", "Jugador6"]
+    let arrayPuntuaciones = [200, 500, 600, 100, 500, 800]
+    let ejecutarPrograma = true
+    let opcionMenu = ""
+    let puntuaciónMasBaja = 1000000
+    let puntuaciónMasAlta = 0
+    let nuevoJugador = ""
+    let nuevaPuntuacion = 0
+
+    while (ejecutarPrograma == true) {
+        opcionMenu = prompt("1. Añadir un nuevo jugador (eliminando al más antiguo).\n2. Mostrar jugadores y puntuaciones.\n3. Mostrar el jugador con mayor puntuación.\n4. Mostrar el jugador con menor puntuación.\n5. Salir.")
+
+        if (opcionMenu == "1") {
+
+            arrayJugadores.pop()
+            arrayPuntuaciones.pop()
+            nuevoJugador = prompt("Nombre del nuevo jugador")
+            nuevaPuntuacion = Number(prompt("Nueva puntuacion"))
+            arrayJugadores.unshift(nuevoJugador)
+            arrayPuntuaciones.unshift(nuevaPuntuacion)
+
+        }
+        else if (opcionMenu == "2") {
+            alert(arrayJugadores.join(" ") + "\n" + arrayPuntuaciones.join(" "))
+        }
+        else if (opcionMenu == "3") {
+            for (let i = 0; i < arrayPuntuaciones.length; i++) {
+                if (arrayPuntuaciones[i] > puntuaciónMasAlta) {
+                    puntuaciónMasAlta = arrayPuntuaciones[i]
+                }
+
+            }
+
+            alert("La puntuacion mas alta es: " + puntuaciónMasAlta)
+
+        }
+        else if (opcionMenu == "4") {
+
+            for (let i = 0; i < arrayPuntuaciones.length; i++) {
+                if (arrayPuntuaciones[i] < puntuaciónMasBaja) {
+                    puntuaciónMasBaja = arrayPuntuaciones[i]
+                }
+
+            }
+
+            alert("La puntuacion mas baja es: " + puntuaciónMasBaja)
+
+        }
+        else if (opcionMenu == "5") {
+            ejecutarPrograma = false
+        }
+    }
+
+
+</script>
