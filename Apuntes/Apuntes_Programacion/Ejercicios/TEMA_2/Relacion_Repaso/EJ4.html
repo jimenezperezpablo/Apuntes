@@ -1,0 +1,45 @@
+<script>
+
+    let arrayMinas = ["x", " ", "x", " ", "x", "x", "x", " ", " ", "x"]
+    let posicionesDescubiertas = ["-","-","-","-","-","-","-","-","-","-"]
+    let ejecutarPrograma = true
+    let posicionActual
+    let contadorMinas = 0
+
+    while (ejecutarPrograma == true) {
+        contadorMinas = 0
+        posicionActual = Number(prompt("Introduce la posicion que quieres comprobar"))
+
+
+       if(arrayMinas[posicionActual] == "x"){
+
+        posicionesDescubiertas[posicionActual] = "X"
+
+       }else{
+
+        alert("Te has salvado")
+
+        posicionesDescubiertas[posicionActual] = " "
+
+        if(arrayMinas[posicionActual - 1] == "x"){
+            contadorMinas ++
+
+        }else if(arrayMinas[posicionActual + 1] == "x"){
+
+            contadorMinas ++
+
+
+        }
+        alert("Hay "+contadorMinas+" en las casillas de al lado")
+
+       }
+
+       alert(posicionesDescubiertas.join(" "))
+
+
+    }
+
+
+
+
+</script>
