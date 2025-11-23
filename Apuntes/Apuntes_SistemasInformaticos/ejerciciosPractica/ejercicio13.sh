@@ -1,1 +1,0 @@
-cp /ect/magic PRUEBA/mensaje

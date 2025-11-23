@@ -1,1 +1,0 @@
-cp /etc/crontab examen/copia_crontab

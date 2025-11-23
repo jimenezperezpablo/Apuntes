@@ -1,1 +1,0 @@
-cd examen/ejercicios2
