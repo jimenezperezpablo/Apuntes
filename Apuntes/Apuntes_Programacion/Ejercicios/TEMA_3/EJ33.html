@@ -1,0 +1,27 @@
+<script>
+    function generarUsuario(primerNombre, segundoNombre) {
+
+        let nombreUsuario = ""
+
+        for (let i = 0; i < 3; i++) {
+            nombreUsuario += primerNombre[i]
+        }
+        for (let i = 0; i < 3; i++) {
+            nombreUsuario += segundoNombre[i]
+        }
+        for (let i = 0; i < 3; i++) {
+            nombreUsuario += Math.floor(Math.random() * (9 - 1 + 1)) + 1
+        }
+
+        return nombreUsuario.toLowerCase()
+
+    }
+
+    // ============================= MAIN ============================= //
+
+    let miNombreUsuario = generarUsuario("Pedro", "Torres")
+
+    console.log(miNombreUsuario)
+
+
+</script>

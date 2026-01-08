@@ -1,0 +1,44 @@
+<script>
+function repartirTareas(personas, tareasARealizar) {
+    let repartoTareas = []
+    const numeroTareasBase = Math.floor(tareasARealizar.length / personas.length)
+    let tareasExtra = tareasARealizar.length % personas.length
+
+    for (let i = 0; i < personas.length; i++) {
+        repartoTareas[i] = []
+        repartoTareas[i][0] = personas[i]
+
+        // Número de tareas para esta persona
+        let numeroTareas = numeroTareasBase
+        if (tareasExtra > 0) {
+            numeroTareas++
+            tareasExtra--
+        }
+
+        repartoTareas[i][1] = []  // Inicializamos el array UNA sola vez
+        for (let j = 0; j < numeroTareas; j++) {
+            let idxTarea = Math.floor(Math.random() * tareasARealizar.length)
+            repartoTareas[i][1].push(tareasARealizar[idxTarea])
+            tareasARealizar.splice(idxTarea, 1)
+        }
+    }
+
+    return repartoTareas
+}
+
+const nombres = ["Ana", "Luis", "Pedro", "María"];
+const tareas = [
+    "Lavar platos",
+    "Limpiar baño",
+    "Hacer compras",
+    "Barrer",
+    "Cortar césped",
+    "Cocinar",
+    "Organizar estantes",
+    "Limpiar ventanas",
+    "Poner la mesa",
+    "Recoger ropa"
+];
+
+console.log(repartirTareas(nombres, tareas));
+</script>

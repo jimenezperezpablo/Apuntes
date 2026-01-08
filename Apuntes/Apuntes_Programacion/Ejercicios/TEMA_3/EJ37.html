@@ -1,0 +1,30 @@
+<script>
+
+
+    function emparejarAmigos(listaAmigos) {
+        let parejas = []
+        let amigoActual = 0
+
+        for (let i = 0; i < 3; i++) {
+            parejas[i] = []
+            amigoActual = Math.floor(Math.random() * (listaAmigos.length))
+            parejas[i][0] = listaAmigos[amigoActual]
+            listaAmigos.splice(amigoActual, 1)
+            amigoActual = Math.floor(Math.random() * (listaAmigos.length))
+            parejas[i][1] = listaAmigos[amigoActual]
+            listaAmigos.splice(amigoActual, 1)
+
+        }
+
+        return parejas
+
+
+    }
+
+    // ============================= MAIN ============================= //
+
+    const amigos = ["Ana", "Luis", "Marta", "Pedro", "Elena", "Carlos"]
+    const parejasAmigoInvisible = emparejarAmigos(amigos)
+
+    console.log(parejasAmigoInvisible)
+</script>

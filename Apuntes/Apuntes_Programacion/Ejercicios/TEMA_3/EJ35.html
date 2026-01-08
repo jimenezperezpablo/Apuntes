@@ -1,0 +1,43 @@
+<script>
+
+    function simularVotaciones(listaCandidatos) {
+        let listaResultados = []
+        let totalPorcentaje = 0
+        let porcentaje100 = true
+
+        while (porcentaje100) {
+            
+            for (let i = 0; i < listaCandidatos.length; i++) {
+                listaResultados[i] = []
+                listaResultados[i][0] = listaCandidatos[i]
+                if (i === 0) {
+                    listaResultados[i][1] = Math.floor(Math.random() * (100 - 0 + 1)) + 0
+                    totalPorcentaje += listaResultados[i][1]
+                }
+                else {
+                    listaResultados[i][1] = Math.floor(Math.random() * ((100 - totalPorcentaje) - 0 + 1)) + 0
+                    totalPorcentaje += listaResultados[i][1]
+                }
+            }
+            if(totalPorcentaje == 100){
+                porcentaje100 = false
+            }
+            else{
+                totalPorcentaje = 0
+            }
+        }
+
+
+        return listaResultados
+
+
+    }
+
+
+
+
+
+    const candidatos = ["Juan", "Sofía", "Carlos"];
+    alert(simularVotaciones(candidatos));
+
+</script>

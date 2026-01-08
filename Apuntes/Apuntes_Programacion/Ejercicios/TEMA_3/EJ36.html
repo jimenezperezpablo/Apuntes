@@ -1,0 +1,27 @@
+<script>
+
+    function detectarPalabrasClave(enunciado, claves) {
+        let contador = 0
+
+        enunciado.toLowerCase()
+        
+
+        const palabrasEnunciado = enunciado.toLowerCase().split(" ");
+
+        for (let i = 0; i < palabrasEnunciado.length; i++) {
+
+            for (let j = 0; j < claves.length; j++) {
+                if (palabrasEnunciado[i] == claves[j]) {
+                    contador++
+                }
+
+            }
+
+        }
+
+        return contador
+    }
+    const texto = "Me gusta programar en Python y Java";
+    const palabrasClave = ["python", "java", "c++"];
+    alert(detectarPalabrasClave(texto, palabrasClave));
+</script>

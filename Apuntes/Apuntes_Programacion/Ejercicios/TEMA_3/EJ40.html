@@ -1,0 +1,57 @@
+<script>
+    // ***Salidas:***
+    // ```javascript
+    // // DÍA DE INVIERNO
+    // [12, -3, 70] // Máxima: 12°C, Mínima: -3°C, Lluvia: 70%
+    // ```
+
+    // ```javascript
+    // // SEMANA DE VERANO
+    // [
+    //   [32, 25, 20], // Día 1
+    //   [30, 22, 15], // Día 2
+    //   [35, 28, 10], // Día 3
+    //   [27, 20, 40], // Día 4
+    //   [38, 30, 5],  // Día 5
+    //   [29, 21, 50], // Día 6
+    //   [40, 25, 0]   // Día 7
+    // ]
+    // ```  
+
+
+    function simularClimaSemana(veranoInvierno) {
+
+        let maxima = 0
+        let minima = 0
+        let lluvia = 0
+
+        let semana = []
+
+
+        for (let i = 0; i < 7; i++) {
+
+            semana[i] = []
+
+            if (veranoInvierno == "invierno") {
+                maxima = Math.floor(Math.random() * (40 - (25) + 1)) + (25)
+                minima = Math.floor(Math.random() * (25 - (15) + 1)) + (15)
+                lluvia = Math.floor(Math.random() * (50 - 0 + 1)) + 0
+            } else {
+                maxima = Math.floor(Math.random() * (15 - (-5) + 1)) + (-5)
+                minima = Math.floor(Math.random() * (5 - (-15) + 1)) + (-15)
+                lluvia = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+            }
+
+            semana[i] = [maxima,minima,lluvia]
+
+        }
+        return semana
+    }
+
+
+
+    // ============================= MAIN ============================= //
+
+    const simulacionSemana = simularClimaSemana("verano")
+    console.log(simulacionSemana)
+</script>
