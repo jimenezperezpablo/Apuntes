@@ -1,4 +1,4 @@
-package ejercicios.UD1.R1;
+package ejercicios.UD1.R2;
 
 import java.util.Scanner;
 
@@ -20,3 +20,6 @@ public class Ejercicio9 {
         scanner.close();
     }
 }
+
+
+
