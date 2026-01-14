@@ -37,12 +37,12 @@ public class EJ8 {
             do {
                 try {
                     System.out.print("Introduce tu numero 2: ");
-                    numero1 = Integer.parseInt(scanner.nextLine()) ;
+                    numero2 = Integer.parseInt(scanner.nextLine()) ;
                 } catch (Exception e) {
-                    numero1 = -1;
+                    numero2 = -1;
                     System.out.println("ERROR al leer entero");
                 }
-            } while(numero1 < 0);
+            } while(numero2 < 0);
 
             System.out.println("El numero "+mayor(numero1, numero2)+" es mayor");
         }
