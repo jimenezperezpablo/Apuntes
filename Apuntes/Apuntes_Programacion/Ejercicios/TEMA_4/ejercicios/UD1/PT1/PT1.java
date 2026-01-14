@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PT1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numerosEncargo;
+        int numeroEncargos;
         int stockMadera;
         double stockAcero;
         int contador = 1;
@@ -32,13 +32,15 @@ public class PT1 {
         final int ESPADAMONEDAS = 25;
 
         // Pido el numero de encargos
-        System.out.print("Introduce el numero de encargos: ");
-        numerosEncargo = scanner.nextInt();
-        while (numerosEncargo <= 0) {
-            System.out.println("Error Al introducir los numeros de Encargos debe ser un numero mayor que 0");
-            System.out.print("Introduce el numero de encargos: ");
-            numerosEncargo = scanner.nextInt();
-        }
+        do {
+            try {
+                System.out.print("¿Cuantos encargos piensas realizar? (Int): ");
+                numeroEncargos = Integer.parseInt(scanner.nextLine()) ;
+            } catch (Exception e) {
+                numeroEncargos = 0;
+                System.out.println("ERROR al leer entero");
+            }
+        } while(numeroEncargos <= 0);
 
         // Pido el stock de Madera
         System.out.print("Introduce el stock de Madera: ");
@@ -46,16 +48,16 @@ public class PT1 {
         while (stockMadera < 0) {
             System.out.println("Error Al introducir el stock de madera debe ser un numero mayor que 0");
             System.out.print("Introduce el stock de Madera: ");
-            numerosEncargo = scanner.nextInt();
+            numeroEncargos = scanner.nextInt();
         }
-        
+
         // Pido el stock de Acero
         System.out.print("Introduce el stock de Acero: ");
         stockAcero = scanner.nextDouble();
         while (stockAcero < 0) {
             System.out.println("Error Al introducir el stock de Acero debe ser un numero mayor que 0");
             System.out.print("Introduce el stock de Acero: ");
-            numerosEncargo = scanner.nextInt();
+            numeroEncargos = scanner.nextInt();
         }
         scanner.nextLine();
         while (ejecutar) {
@@ -128,8 +130,7 @@ public class PT1 {
             // Verficacion de si el programa continua y te dice el resumen o si por el
             // contrario dice que no hay mas material
             if (ejecutar) {
-                System.out
-                        .println("Articulo: " + producto + " || Unidades :" + unidades + " || Precio: " + precioPedido);
+                System.out.println("Articulo: " + producto + " || Unidades :" + unidades + " || Precio: " + precioPedido);
                 System.out.println("Madera Gastada: " + maderaPedido + " | Acumulada: " + maderaAcumulada);
                 System.out.println("Acero Gastado: " + aceroPedido + " | Acumulado " + aceroAcumulado);
                 contador++;
@@ -138,13 +139,12 @@ public class PT1 {
             }
 
             // Verifica que se haya cumplido el numero de encargos
-            if (numerosEncargo == contador) {
+            if (numeroEncargos == contador) {
                 ejecutar = false;
-
             }
         }
         // Resumen final
-        System.out.println("=== RESUMEN FINAL === \nNºEncargos: " + contador + " de " + numerosEncargo + "\n ");
+        System.out.println("=== RESUMEN FINAL === \nNºEncargos: " + contador + " de " + numeroEncargos + "\n ");
         scanner.close();
     }
 }
