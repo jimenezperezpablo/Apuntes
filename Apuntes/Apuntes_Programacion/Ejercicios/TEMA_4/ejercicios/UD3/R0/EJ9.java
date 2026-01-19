@@ -5,18 +5,13 @@ import java.util.Scanner;
 public class EJ9 {
 
     public static int menor3(int a, int b, int c) {
-
         int minimo = a;
-
         if (minimo > b) {
-
             minimo = b;
-
         }
         if (minimo > c) {
             minimo = c;
         }
-
         return minimo;
     }
 

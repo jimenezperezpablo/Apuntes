@@ -1,0 +1,14 @@
+h1,
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h2 {
+  font-size: medium;
+}
+blockquote {
+  font-style: italic;
+  color: aqua;
+}

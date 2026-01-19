@@ -41,3 +41,20 @@ SELECT concat(nombre,apellido) as Concatenado FROM gobierno.ciudadano;
 SELECT SUBSTRING(nombre, 1 , 3) as 3Letras  FROM gobierno.ciudadano;
 select nombre,length(nombre) as Longitud from ciudadano;
 SELECT REPLACE(descripcion, 'hospitales', 'clínicas') FROM actividad;
+SELECT trim(nombre) FROM gobierno.ministerio;
+
+SELECT round(presupuesto_asignado) FROM gobierno.actividad;
+SELECT ingresos_anuales - (Select avg(ingresos_anuales) from ciudadano) FROM gobierno.ciudadano;
+SELECT round(presupuesto , 0) FROM gobierno.ministerio;
+SELECT FLOOR(1 + (RAND() * 100)) as id_Unico_Temp FROM gobierno.actividad;
+
+SELECT DATEDIFF(NOW(), fecha_creacion )/ 365 AS antiguedad FROM ministerio;
+
+SELECT * ,DATE_FORMAT(fecha_inicio, '%d/%m/%Y') as fecha_ini,DATE_FORMAT(fecha_fin, '%d/%m/%Y') as fecha_end FROM actividad;
+SELECT DATEDIFF(fecha_fin, fecha_inicio ) FROM actividad;
+SELECT *,EXTRACT(YEAR FROM fecha_nacimiento),EXTRACT(month FROM fecha_nacimiento)  FROM ciudadano;
+
+SELECT nombre, apellido,fecha_nacimiento, EXTRACT(YEAR FROM fecha_nacimiento) AS ano_nacimiento, EXTRACT(MONTH FROM fecha_nacimiento) AS mes_nacimiento
+FROM ciudadano WHERE EXTRACT(YEAR FROM fecha_nacimiento) > 1990;
+
+SELECT Sum(DATEDIFF(fecha_fin, fecha_inicio)) as Duracion_total FROM actividad;

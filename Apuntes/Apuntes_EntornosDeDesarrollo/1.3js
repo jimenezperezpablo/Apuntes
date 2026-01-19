@@ -1,0 +1,11 @@
+
+
+function calc(x, y) {
+    let numero = 0
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] > y) {
+            numero = numero + x[i]
+        }
+    }
+    return numero
+}

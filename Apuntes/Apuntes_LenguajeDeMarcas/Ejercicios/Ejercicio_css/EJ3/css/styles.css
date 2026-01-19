@@ -1,0 +1,12 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+div > ul > li {
+  color: brown;
+}
+
+div + p {
+  background-color: aquamarine;
+}
