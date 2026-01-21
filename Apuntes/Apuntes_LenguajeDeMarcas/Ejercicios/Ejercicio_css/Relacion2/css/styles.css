@@ -1,0 +1,71 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Ejercicio1 */
+.caja {
+  width: 250px;
+  height: 150px;
+  padding: 15px;
+  border: 5px solid red;
+  margin: 20px;
+}
+/* Ejercicio2 */
+.caja-1 {
+  padding: 30px;
+  background-color: lightblue;
+}
+.caja-2 {
+  margin: 30px;
+  background-color: lightgreen;
+}
+
+/* Ejercicio3 */
+
+.borde-personalizado {
+  border-top: 10px solid blue;
+  border-right: 5px dashed red;
+  border-bottom: 8px dotted green;
+  border-left: 3px double black;
+  padding: 20px;
+}
+
+/* Ejercicio4 */
+
+.caja-em-rem {
+  font-size: 20px;
+  padding: 2em;
+}
+.caja-em-rem > h1 {
+  font-size: 2rem;
+}
+.caja-em-rem > p {
+  font-size: 1.5em;
+}
+
+/* Ejercicio5 */
+
+.caja-fluid {
+  width: 50vw;
+  height: 30vh;
+  background-color: lightcoral;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
