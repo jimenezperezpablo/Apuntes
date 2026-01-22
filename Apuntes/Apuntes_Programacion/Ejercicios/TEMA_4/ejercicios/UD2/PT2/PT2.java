@@ -11,15 +11,15 @@ public class PT2 {
         }
     }
 
-    public static void randomTablero(ArrayList<String> arrayInterno, int numeroBombas) {
-        int bombasPuestas = 0; // Comienza en 0 y se incrementa
+    public static void randomTablero(ArrayList<String> arrayInterno, int numeroExplosiones) {
+        int bombasPuestas = 0;
 
-        while (bombasPuestas < numeroBombas) { // Condición corregida
-            int numeroAleatorio = (int) (Math.random() * 10); // Generar dentro del bucle
+        while (bombasPuestas < numeroExplosiones) {
+            int numeroAleatorio = (int) (Math.random() * arrayInterno.size());
 
             if (!arrayInterno.get(numeroAleatorio).equals("1")) {
                 arrayInterno.set(numeroAleatorio, "1");
-                bombasPuestas++; // Incrementar
+                bombasPuestas++;
             }
         }
     }
@@ -27,14 +27,15 @@ public class PT2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         final int tamanioTablero = 10;
+        int casillasDestapadas = 0;
+        int numeroInteraccion = 0;
         int numeroBombas;
         int numeroSeleccionado;
-        boolean jugar = true;
-        int numeroInteraccion = 0;
         String jugador;
-        int casillasDestapadas = 0;
+        boolean jugar = true;
         ArrayList<String> tableroInterno = new ArrayList<String>();
         ArrayList<String> tableroExterno = new ArrayList<String>();
+        
 
         generadorTablero(tableroInterno, tamanioTablero, "0");
         generadorTablero(tableroExterno, tamanioTablero, "X");
@@ -59,11 +60,10 @@ public class PT2 {
                 jugador = "Luigi";
             }
 
-            System.out.println("Este turno es de: " + jugador);
             System.out.println("Tablero externo: " + tableroExterno);
 
             do {
-                System.out.print("¿Que casilla quieres destapar? (Int) (1-10): ");
+                System.out.print(jugador + " elige (Int) (1-10): ");
                 try {
                     numeroSeleccionado = Integer.parseInt(scanner.nextLine());
                 } catch (Exception e) {
@@ -81,7 +81,7 @@ public class PT2 {
                 casillasDestapadas++;
                 tableroExterno.set(numeroSeleccionado - 1, "O");
 
-                if (casillasDestapadas + numeroBombas == 10) {
+                if (casillasDestapadas + numeroBombas == tamanioTablero) {
                     jugar = false;
                 }
             }
