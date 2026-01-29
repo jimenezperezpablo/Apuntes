@@ -1,5 +1,4 @@
 package ejercicios.PRUEBARECU;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -66,8 +65,6 @@ public class PTRecu {
         System.out.println(mensajeMostrar);
     }
 
-    
-
     public static int buscarEstudiante(ArrayList<String> nombres, String nombreEliminar) {
         int posicion = -1;
         for (int i = 0; i < nombres.size(); i++) {
@@ -87,27 +84,27 @@ public class PTRecu {
 
         if (nombres.isEmpty()) {
             System.out.println("No hay estudiantes registrados");
-        }else{
+        } else {
 
             mejorNota = notas.get(0);
             mejorAsistencia = asistencia.get(0);
-    
+
             for (int i = 1; i < notas.size(); i++) {
                 if (mejorNota < notas.get(i)) {
                     mejorNota = notas.get(i);
                     nombreNota = nombres.get(i);
                 }
-    
+
             }
-    
+
             System.out.println("La mejor nota: " + nombreNota + " (" + mejorNota + ")");
-    
+
             for (int i = 1; i < notas.size(); i++) {
                 if (mejorAsistencia < asistencia.get(i)) {
                     mejorAsistencia = asistencia.get(i);
                     nombreAsistencia = nombres.get(i);
                 }
-    
+
             }
             System.out.println("La mejor asistencia: " + nombreAsistencia + " (" + mejorAsistencia + ")");
         }
@@ -138,38 +135,25 @@ public class PTRecu {
                 notas.addFirst(nuevaNota);
                 asistencia.addFirst(nuevaAsistencia);
             }
-
             if (opcion == 2) {
-
                 mostrarListado(nombres, notas, asistencia);
-
             }
             if (opcion == 3) {
-
                 mostrarMejores(nombres, notas, asistencia);
             }
-
             if (opcion == 4) {
-
                 System.out.print("Nombre a eliminar: ");
                 nombreEliminar = scanner.nextLine();
-
                 posicionEliminar = buscarEstudiante(nombres, nombreEliminar);
-
                 if (posicionEliminar != -1) {
                     nombres.remove(posicionEliminar);
                     notas.remove(posicionEliminar);
                     asistencia.remove(posicionEliminar);
-
                 }
             }
             if (opcion == 5) {
-
                 ejecutar = false;
-
             }
-
         }
-
     }
 }
