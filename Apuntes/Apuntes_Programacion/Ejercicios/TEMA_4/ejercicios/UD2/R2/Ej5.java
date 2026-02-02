@@ -13,7 +13,6 @@ public class Ej5 {
         double cantidad = 0;
         double total = 0;
 
-        String mensaje = "";
         boolean ejecutar = true;
         int opcion = 0;
 

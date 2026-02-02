@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class TransmisionDatos {
     
     // Constante: Velocidad de propagación en medio físico (aproximadamente 2/3 de la velocidad de la luz)
-    private static final double VELOCIDAD_PROPAGACION = 2.0e8; // 200,000 km/s en m/s
     
     private Scanner scanner;
     private ConversorUnidades conversor;
