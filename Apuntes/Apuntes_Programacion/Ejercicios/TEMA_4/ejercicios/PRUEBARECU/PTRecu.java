@@ -126,6 +126,9 @@ public class PTRecu {
 
         while (ejecutar) {
             opcion = mostrarmenu(scanner);
+
+
+            
             if (opcion == 1) {
                 System.out.print("Nombre: ");
                 nuevoNombre = scanner.nextLine();

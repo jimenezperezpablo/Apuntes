@@ -128,3 +128,6 @@ SELECT *, round(peso,-3) FROM semana_santa.paso ;
 
 
 -- 43. Generar un número aleatorio entre 1 y 100.
+
+
+select anio_nacimiento from actor group by anio_nacimiento having count(*)=(select max(conteo) from (SELECT count( *) as conteo, anio_nacimiento FROM actor GROUP BY anio_nacimiento) p);
