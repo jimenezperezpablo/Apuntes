@@ -1,0 +1,72 @@
+/* 
+
+    --olive-leaf: #606c38ff;
+    --black-forest: #283618ff;
+    --cornsilk: #fefae0ff;
+    --sunlit-clay: #dda15eff;
+    --copperwood: #bc6c25ff;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #606c38;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 4px solid black;
+  background-color: white;
+}
+
+.enlacesEncabezado {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex: 1 1 auto;
+}
+
+li > a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+li > a:hover {
+  color: rgb(0, 17, 255);
+  text-decoration: none;
+  border: 2px solid rgb(0, 0, 0);
+  border-top: 5px;
+  border-left: 5px;
+  border-right: 5px;
+  
+}
+
+.enlacesEncabezado > li:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* ## 3. Sección principal de impacto (Hero)
+
+1. Añade una clase o id a la primera sección del contenido.
+2. Diseña la sección para que:
+   - Tenga una altura destacada.
+   - El contenido esté correctamente alineado.
+3. Aplica una imagen o recurso visual de fondo relacionado con el antipirateo.
+4. Estiliza:
+   - El título principal como elemento protagonista.
+   - El texto descriptivo como subtítulo.
+5. Botón de acción:
+   - Dale un aspecto claro de llamada a la acción.
+   - Añade un efecto visual al pasar el ratón (cambio visual y transformación).
+
+--- */

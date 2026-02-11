@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +38,7 @@ li > a {
 }
 
 .hero {
-  background-image: url('https://picsum.photos/2000/300');
+  background-image: url("https://picsum.photos/2000/300");
   background-size: cover;
   background-position: center;
   padding: 50px 40px;
@@ -48,7 +47,6 @@ li > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .hero button {
   padding: 15px 15px;
@@ -59,12 +57,103 @@ li > a {
   margin: 5px;
 }
 
-.hero h2,p {
+.hero button:hover{
+  
+}
+.hero h2,
+p {
   background-color: transparent;
   color: rgb(0, 0, 0);
   margin: 5px;
 }
 
+.imagen img {
+  border-radius: 15%;
+}
 
+.imagen > h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+.imagenes {
+  display: flex;
+  flex-direction: row; /* ← FILA (uno al lado del otro) */
+  justify-content: space-between; /* Distribuye el espacio */
+  gap: 30px; /* Espacio entre las tarjetas */
+}
 
+.imagen {
+  display: flex;
+  flex-direction: column; /* Elementos apilados verticalmente */
+  align-items: center; /* Centrado horizontal */
+  text-align: center; /* Centra el texto */
+}
 
+.personajes {
+  display: flex;
+  flex-direction: row; /* ← FILA (uno al lado del otro) */
+  justify-content: space-between; /* Distribuye el espacio */
+  gap: 30px; /* Espacio entre las tarjetas */
+}
+
+.personajes > * > h3:hover {
+  color: rgb(55, 0, 255);
+}
+
+.personaje1 {
+  background-color: brown;
+  border-radius: 10px;
+}
+.personaje1 h3 {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+}
+.personaje2 {
+  background-color: rgb(15, 90, 49);
+  border-radius: 10px;
+}
+.personaje2 h3 {
+  background-color: rgb(15, 90, 49);
+  color: white;
+  padding: 10px;
+}
+.personaje3 {
+  background-color: rgb(223, 219, 6);
+  border-radius: 10px;
+}
+
+.personaje3 h3 {
+  background-color: rgb(223, 219, 6);
+  color: white;
+  padding: 10px;
+}
+.personaje4 {
+  background-color: rgb(141, 104, 104);
+  border-radius: 10px;
+}
+.personaje4 h3 {
+  background-color: rgb(141, 104, 104);
+  color: white;
+  padding: 10px;
+}
+
+.evento12,
+.evento12 > h3,
+.evento12 > time {
+  background-color: aqua;
+}
+.evento3,
+.evento3 > h3,
+.evento3 > time {
+  background-color: rgb(155, 11, 124);
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: row; /* ← FILA (uno al lado del otro) */
+  justify-content: flex-start; /* Distribuye el espacio */
+  gap: 30px; /* Espacio entre las tarjetas */
+}
+.enlaces>li+a:hover{
+  color:blue ;
+}
