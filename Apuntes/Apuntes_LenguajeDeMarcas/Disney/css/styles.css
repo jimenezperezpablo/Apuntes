@@ -154,6 +154,9 @@ p {
   justify-content: flex-start; /* Distribuye el espacio */
   gap: 30px; /* Espacio entre las tarjetas */
 }
-.enlaces>li+a:hover{
-  color:blue ;
+.enlaces>li>a:hover{
+    color: rgb(55, 0, 255);
+}
+.enlaces>li>a{
+    color: black;
 }

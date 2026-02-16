@@ -1,4 +1,4 @@
-package Apuntes.Apuntes_Programacion.Ejercicios.TEMA_5;
+package Apuntes.Apuntes_Programacion.Ejercicios.TEMA_5.Rel1;
 
 public class Ejercicio1 {
 
