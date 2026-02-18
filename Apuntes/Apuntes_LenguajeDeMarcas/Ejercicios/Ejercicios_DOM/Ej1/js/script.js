@@ -7,6 +7,7 @@ let boton = document.querySelector("#resaltarAnimales")
 boton.addEventListener("click", function () {
     for (let element of animales) {
         element.style.color = "green"
+        element.style.fontSize = "25px"
 
     }
 })
