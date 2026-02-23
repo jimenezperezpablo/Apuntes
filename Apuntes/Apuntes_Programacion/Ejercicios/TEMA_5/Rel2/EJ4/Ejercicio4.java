@@ -12,6 +12,21 @@ public class Ejercicio4 {
         System.out.println(stringMostrar);
     }
 
+    public static int pedirNumeroEnteroConControlErrores(Scanner scanner, int numeroMinimo, String mensajePedir,
+            String mensajError) {
+        int variableRellenar;
+        do {
+            mensajeMismaLineaString(mensajePedir);
+            try {
+                variableRellenar = Integer.parseInt(scanner.nextLine());
+            } catch (Exception e) {
+                variableRellenar = numeroMinimo - 1;
+                mensajeMismaLineaString(mensajError);
+            }
+        } while (variableRellenar < numeroMinimo);
+        return variableRellenar;
+    }
+
     public static void mensajeMismaLineaString(String stringMostrar) {
         System.out.print(stringMostrar);
     }
@@ -36,26 +51,39 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         int rangoMenu;
         Scanner scanner = new Scanner(System.in);
+        int numeroCanciones;
+        int totalDuracionCanciones;
+        Playlist playlist = new Playlist();
 
-        rangoMenu = pedirRangoMenu(scanner, "1.Agrega Canciones\n2.Enseña Canciones\n3.Mostrar duracion\n4.Salir",
-                "Selecciona una opcion: ", "Error", 1, 4);
+        do {
+            rangoMenu = pedirRangoMenu(
+                    scanner,
+                    "\n1. Agregar Canciones\n2. Mostrar Canciones\n3. Mostrar Duración\n4. Salir",
+                    "Selecciona una opción: ",
+                    "Error: opción no válida",
+                    1, 4);
 
-        if (rangoMenu == 1) {
-            
+            if (rangoMenu == 1) {
+                numeroCanciones = pedirNumeroEnteroConControlErrores(
+                        scanner, 1,
+                        "Introduce el número de canciones: ",
+                        "Error: debe ser mínimo 1");
+                playlist.cancionesAleatorios(numeroCanciones);
+                mensajeNuevaLineaString("Se han añadido " + numeroCanciones + " canciones.");
 
-        }
+            } else if (rangoMenu == 2) {
+                playlist.mostrarCanciones();
 
-        if (rangoMenu == 2) {
+            } else if (rangoMenu == 3) {
+                totalDuracionCanciones = playlist.mostrarDuracion();
+                mensajeNuevaLineaString("Duración total: " + totalDuracionCanciones + " segundos");
 
-        }
+            }
 
-        if (rangoMenu == 3) {
+        } while (rangoMenu != 4);
 
-        }
-
-        if (rangoMenu == 4) {
-
-        }
+        mensajeNuevaLineaString("¡Hasta luego!");
+        scanner.close();
 
     }
 }

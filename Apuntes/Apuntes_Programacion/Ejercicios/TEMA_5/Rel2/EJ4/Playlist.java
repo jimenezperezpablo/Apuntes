@@ -7,9 +7,9 @@ public class Playlist {
     // En el `main`, implementa un **menú** para agregar y mostrar canciones. Usa la
     // clase `Faker` para generar 100 canciones.
 
-    ArrayList<Cancion> canciones;
+    private ArrayList<Cancion> canciones; // ← sin static
 
-    Playlist() {
+    public Playlist() {
         this.canciones = new ArrayList<>();
     }
 
@@ -19,21 +19,25 @@ public class Playlist {
         }
     }
 
-    public void mostrarCanciones() {
-        String mensaje = "";
+    public void mostrarCanciones() { // ← sin static
         for (int i = 0; i < canciones.size(); i++) {
-            mensaje += ((i + 1) + " | " + canciones.get(i).getTitulo() + " | " + canciones.get(i).getDuracion());
+            System.out.println(
+                    (i + 1) + " | "+canciones.get(i).getArtista()+" | " + canciones.get(i).getTitulo() + " | " + canciones.get(i).getDuracion());
         }
     }
 
-    public int mostrarDuracion() {
+    public int mostrarDuracion() { // ← sin static
         int totalDuracion = 0;
         for (Cancion cancion : canciones) {
-
             totalDuracion += cancion.getDuracion();
-
         }
         return totalDuracion;
     }
 
+    public void cancionesAleatorios(int cantidadGenerar) { // ← sin static
+        for (int i = 0; i < cantidadGenerar; i++) {
+            canciones.add(FakerCanciones.cancion());
+        }
+
+    }
 }
