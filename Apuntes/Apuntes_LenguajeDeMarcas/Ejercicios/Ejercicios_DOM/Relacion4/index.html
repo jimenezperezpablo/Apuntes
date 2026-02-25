@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energy Station - Eventos JS</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>⚡ Energy Station</h1>
+    <p>Practica eventos y DOM con una sola página.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- 1) Click imagen -->
+    <section class="card">
+      <h2>🍻 1) Clic en la imagen</h2>
+      <p>Haz clic en la imagen.</p>
+      <div class="img-wrap">
+        <img id="imgClick" src="https://picsum.photos/id/237/200/300" alt="Imagen clicable">
+      </div>
+    </section>
+
+    <!-- 2) Hover imagen -->
+    <section class="card">
+      <h2>🍺 2) Hover con el ratón</h2>
+      <p>Pasa el ratón por encima para cambiar la imagen.</p>
+      <div class="img-wrap">
+        <img id="imgHover" src="https://picsum.photos/200?random=2" alt="Imagen hover">
+      </div>
+      <p class="hint">La imagen debe cambiar cuando el ratón entre y volver al salir.</p>
+    </section>
+
+    <!-- 3) Keydown -->
+    <section class="card">
+      <h2>💪 3) Escribiendo</h2>
+      <p>Escribe y mira la consola.</p>
+      <label class="label" for="campoTexto">Campo de texto</label>
+      <input type="text" id="campoTexto" placeholder="Escribe algo...">
+    </section>
+
+    <!-- 4) Submit -->
+    <section class="card">
+      <h2>🌋 4) Formulario</h2>
+      <p>Envía el formulario sin recargar la página.</p>
+
+      <form id="formulario" class="form">
+        <label class="label" for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p id="resultado" class="result" aria-live="polite"></p>
+    </section>
+
+    <!-- 5) Focus/Blur -->
+    <section class="card">
+      <h2>🤖 5) Focus y Blur</h2>
+      <p>Haz clic dentro y fuera del input.</p>
+
+      <label class="label" for="codigo">Código</label>
+      <input type="text" id="codigo" placeholder="Ingresa el código">
+      <p id="mensaje" class="msg" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Relación 4 — Eventos en JavaScript</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
