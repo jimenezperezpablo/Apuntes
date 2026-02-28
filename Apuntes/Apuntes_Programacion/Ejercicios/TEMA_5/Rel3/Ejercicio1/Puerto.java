@@ -113,7 +113,7 @@ public class Puerto {
             amarres.add(a);
             amarreRegistrado = true;
             if (matriculasAmarradas == null) {
-                matriculasAmarradas = new ArrayList<>();
+                matriculasAmarradas = new ArrayList<>(); 
             }
             matriculasAmarradas.add("VACIO");
 
