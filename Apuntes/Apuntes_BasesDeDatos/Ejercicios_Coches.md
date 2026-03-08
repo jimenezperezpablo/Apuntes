@@ -13,80 +13,127 @@ Estos 20 ejercicios están basados en la base de datos **coches**, que contiene 
 
 ## Nivel 1: INNER JOIN Básicos
 
-### 1. Muéstrame las Personas y sus coches (solo los que tengan algun coche
-SELECT personas.*, coches.*
-FROM personas
-INNER JOIN coches ON personas.id = coches.id_dueño;
+### 1. Muéstrame las Personas y sus coches (solo los que tengan algun coche)
+
+SELECT \*  
+FROM coches  
+INNER JOIN personas ON coches.id_dueño = personas.id;
 
 ### 2. Coches con información de dueños como su nombre y su provincia
-SELECT personas.nombre, personas.provincia
-FROM personas
+
+SELECT nombre, municipio  
+FROM personas  
 INNER JOIN coches ON personas.id = coches.id_dueño;
 
 ### 3. Personas que tienen coches y su estado civil.
-SELECT personas.estado_civil, personas.nombre
-FROM personas
+
+SELECT nombre, estado_civil
+FROM personas  
 INNER JOIN coches ON personas.id = coches.id_dueño;
+
 ### 4. Coches de personas ricas (niv socioeconomico alto)
-Select coches.* FROM personas INNER JOIN coches on personas.id = coches.id_dueño where nivel_socioeconomico = "Alto";
+
+SELECT \*
+FROM coches  
+INNER JOIN personas ON coches.id_dueño = personas.id where nivel_socioeconomico = "Alto";
 
 ### 5. Ocupaciones de dueños de coches mayores de 30 años
-Select personas.nombre,personas.ocupacion FROM personas INNER JOIN coches on personas.id = coches.id_dueño where DATEDIFF(NOW(),personas.fecha_nacimiento) > 30;
+
+SELECT \*
+FROM coches  
+INNER JOIN personas ON coches.id_dueño = personas.id where DATEDIFF(NOW(), fecha_nacimiento) / 365.25 > 30;
+
 ---
 
 ## Nivel 2: LEFT JOIN
 
 ### 6. Todas las personas y sus coches (incluyendo sin coches)
-SELECT 
-    personas.nombre,
-    personas.apellido,
-    coches.marca,
-    coches.modelo
-FROM personas
-left JOIN coches ON coches.id_dueño = personas.id;
+
+SELECT \*  
+FROM personas  
+LEFT JOIN coches ON personas.id = coches.id_dueño;
 
 ### 7. Personas sin coches registrados
-SELECT 
-    personas.nombre,
-    personas.apellido,
-    coches.marca,
-    coches.modelo
-FROM personas
-left JOIN coches ON null = personas.id;
+
+SELECT \*  
+FROM personas  
+LEFT JOIN coches ON coches.id_dueño IS NULL;
 
 ### 8. Provincias con y sin representación de coches
 
+SELECT DISTINCT provincia  
+FROM personas  
+LEFT JOIN coches ON personas.id = coches.id_dueño;
+
 ### 9. Nivel de estudios de las personas sin coche
 
+SELECT nombre,nivel_estudios
+FROM personas  
+LEFT JOIN coches ON coches.id_dueño IS NULL;
+
 ### 10. Personas jubiladas con sus vehículos
+
+SELECT \*
+FROM coches  
+left JOIN personas ON coches.id_dueño = personas.id where DATEDIFF(NOW(), fecha_nacimiento) / 365.25 > 65;
 
 ---
 
 ## Nivel 3: JOINS con Agregaciones
 
 ### 11. Número de coches por persona
-SELECT 
-    personas.id,
-    personas.nombre,
-    personas.apellido,
-    COUNT(coches.id) AS numero_coches
-FROM personas
-LEFT JOIN coches ON coches.id_dueño = personas.id
-GROUP BY personas.id, personas.nombre, personas.apellido
-ORDER BY numero_coches DESC;
+
+SELECT personas.id,personas.nombre,COUNT(coches.id) AS total_coches
+FROM personas  
+LEFT JOIN coches ON personas.id = coches.id_dueño
+GROUP BY personas.id;
+
 ### 12. Marca más común entre personas de cada provincia
+
+SELECT personas.provincia,Coches.marca,COUNT(coches.id) AS total
+FROM personas
+INNER JOIN coches ON personas.id = coches.id_dueño
+WHERE coches.marca GROUP BY personas.provincia, coches.marca ORDER BY personas.provincia, total DESC;
 
 ### 13. Promedio de edad de dueños por marca de coche
 
+SELECT coches.marca, AVG(DATEDIFF(NOW(), fecha_nacimiento) / 365.25) AS promedio_edad
+FROM coches
+INNER JOIN personas ON coches.id_dueño = personas.id
+GROUP BY coches.marca
+ORDER BY promedio_edad DESC;
+
 ### 14. Total de ingresos de dueños por color de coche
 
+SELECT color, COUNT(\*) AS cantidad_coches, sum(ingresos_anuales) AS total_ingresosporcolor
+FROM coches
+INNER JOIN personas ON coches.id_dueño = personas.id
+GROUP BY color
+ORDER BY cantidad_coches DESC;
+
 ### 15. Municipios con más coches
+
+SELECT personas.municipio, COUNT(\*) AS cantidad_coches
+FROM coches
+INNER JOIN personas ON coches.id_dueño = personas.id
+GROUP BY municipio
+ORDER BY cantidad_coches DESC;
 
 ---
 
 ## Nivel 4: JOINS Complejos (Autojoins y múltiples tablas)
 
 ### 16. Padres e hijos y sus coches
+
+SELECT
+p1.nombre AS nombre_padre,
+p2.nombre AS nombre_hijo,
+c1.modelo AS coche_padre,
+c2.modelo AS coche_hijo
+FROM personas p1
+INNER JOIN personas p2 ON p1.id = p2.padre
+LEFT JOIN coches c1 ON c1.id_dueño = p1.id
+LEFT JOIN coches c2 ON c2.id_dueño = p2.id;
 
 ### 17. Parejas con algún hijo y sus coches
 
