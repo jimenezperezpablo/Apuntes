@@ -6,8 +6,9 @@
 
 // Implementa una clase Main para probar la creación de objetos y la llamada al método calcularSueldo().
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
-      
+        Programador pablo = new Programador("Pablo", 1799.95);
+        System.out.println(pablo);
     }
 }
