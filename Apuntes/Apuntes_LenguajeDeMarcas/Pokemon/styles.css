@@ -1,0 +1,8 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#pokemon-info img {
+    width: 150px;
+}

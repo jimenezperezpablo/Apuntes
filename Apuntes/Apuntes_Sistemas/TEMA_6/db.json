@@ -1,0 +1,45 @@
+{
+  "personas": [
+    {
+      "id": "1",
+      "nombre": "Ana",
+      "edad": 25,
+      "coches": [
+        {
+          "marca": "Toyota",
+          "modelo": "Corolla"
+        },
+        {
+          "marca": "Ford",
+          "modelo": "Focus"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Luis",
+      "edad": 35,
+      "coches": [
+        {
+          "marca": "BMW",
+          "modelo": "Serie 3"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Sara",
+      "edad": 28,
+      "coches": [
+        {
+          "marca": "Seat",
+          "modelo": "Ibiza"
+        }
+      ]
+    },
+    {
+      "id": "9zJVx88epMU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

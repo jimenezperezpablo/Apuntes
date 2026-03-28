@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica REST Countries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Práctica con la API REST Countries</h1>
+        <p>Completa el archivo JavaScript para consumir distintos endpoints y mostrar la información en pantalla.</p>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <section class="bloque">
+            <h2>1. Buscar país por nombre</h2>
+            <form id="form-nombre" class="formulario">
+                <input type="text" id="input-nombre" placeholder="Ejemplo: spain">
+                <button type="submit">Buscar país</button>
+            </form>
+            <div id="resultado-nombre" class="resultado"></div>
+        </section>
+
+        <section class="bloque">
+            <h2>2. Países por región</h2>
+            <div class="botonera">
+                <button class="btn-region" data-region="europe">Europa</button>
+                <button class="btn-region" data-region="africa">África</button>
+                <button class="btn-region" data-region="asia">Asia</button>
+                <button class="btn-region" data-region="americas">América</button>
+                <button class="btn-region" data-region="oceania">Oceanía</button>
+            </div>
+            <div id="resultado-region" class="grid-tarjetas"></div>
+        </section>
+
+        <section class="bloque">
+            <h2>3. Buscar por capital</h2>
+            <form id="form-capital" class="formulario">
+                <input type="text" id="input-capital" placeholder="Ejemplo: madrid">
+                <button type="submit">Buscar por capital</button>
+            </form>
+            <div id="resultado-capital" class="resultado"></div>
+        </section>
+
+        <section class="bloque">
+            <h2>4. Buscar por código</h2>
+            <form id="form-codigo" class="formulario">
+                <input type="text" id="input-codigo" placeholder="Ejemplo: es">
+                <button type="submit">Buscar por código</button>
+            </form>
+            <div id="resultado-codigo" class="resultado"></div>
+        </section>
+
+        <section class="bloque">
+            <h2>5. Lista rápida de países</h2>
+            <button id="btn-todos">Cargar países</button>
+            <div id="resultado-todos" class="grid-tarjetas"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
